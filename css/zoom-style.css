@@ -166,19 +166,52 @@ footer {
 }
 
 .case-study {
-  padding: 40px;
+  padding: 60px;
 }
 
 .case-study h1 {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   font-family: Taviraj;
-  font-size: 35px;
+  font-size: 50px;
   color: #505050;
 }
 
+.case-study b {
+  font-weight: 500;
+  color: #558CF6;
+}
 .case-study p {
   font-family: Poppins;
   color: #505050;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.case-study h2 {
+  font-family: Poppins;
+  color: #505050;
+  font-size: 35px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+.case-study h5 {
+  font-family: Poppins;
+  color: #938D8D;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.case-study a {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #558CF6;
+}
+.case-study a:visited {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #558CF6;
 }
