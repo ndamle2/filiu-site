@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #F6F2E6;
+  --text-color: #C77492;
+  --second-color: #a09dab;
+  --main-color: #f75023;
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F6F2E6;
+  padding: 30px 18%;
+  transition: .3s;
+}
+
+.logo img{
+  max-width: 100%;
+  width:50px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+
+}
+.navbar li{
+  position: relative;
+}
+.navbar a{
+  font-size: var(--p-font);
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 10px 27px;
+}
+.navbar a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #BA9369;
+  bottom: -3px;
+  left: 0;
+  transition: ease .40s;
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+#bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    z-index: 999;
+}
+
+section{
+  padding-top: 200px;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-bottom: 0px;
+  z-index:0;
+}
+
+.home {
+  height: 50%;
+  width:100%;
+  position: relative;
+}
+.home-text h1{
+  margin: 20px 0px 0px 20px;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 500;
+}
+.home-text h5{
+  margin: 15px 0px 25px 24px;
+  font-size: 19px;
+  line-height: 1;
+  font-weight: 500;
+  color: #CFC9B7;
+}
+span{
+  color: #BA9369;
+}
+.everyday{
+  color: white;
+  background-color: #A97D4C;
+}
+.designer{
+  color: #A97D4C;
+  background-color: white;
+}
+.home-text h3{
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 500px;
+  line-height: 1.5;
+}
+.home-text h4{
+  margin: 0px 0px 0px 20px;
+  font-size: 50px;
+  font-weight: 500px;
+  line-height: 1.5;
+}
+
+.home-buttons {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
