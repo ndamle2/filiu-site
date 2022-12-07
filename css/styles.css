@@ -6,7 +6,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 :root{
@@ -146,13 +146,13 @@ footer {
 .home-text h3{
   margin-bottom: 50px;
   font-size: 35px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1.5;
 }
 .home-text h4{
   margin: 0px 0px 0px 20px;
   font-size: 35px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1.5;
 }
 .image{
@@ -164,28 +164,28 @@ footer {
   padding-bottom: 40px;
 }
 #work {
-  fill: #BD295F;
+  fill: #D9AF6E;
 }
 #work:hover {
-  fill: red;
+  fill: #EBA937;
 }
 #play {
-  fill: #ABCDA2;
+  fill: #D1828A;
 }
 #play:hover {
-  fill: green;
+  fill: #BD295F;
 }
 #about {
-  fill: #BD295F;
+  fill: #B6BDCE;
 }
 #about:hover {
-  fill: blue;
+  fill: #8CA9E1;
 }
 #everyday {
-  fill: #BD295F;
+  fill: #BDC39C;
 }
 #everyday:hover {
-  fill: orange;
+  fill: #AEBC67;
 }
 
 .work-scroll {
@@ -197,9 +197,7 @@ footer {
   text-align: center;
   font-size: 25px;
 }
-.exp-section {
 
-}
 .ui-top {
   width:80%;
   display: block;

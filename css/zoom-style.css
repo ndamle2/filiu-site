@@ -142,6 +142,12 @@ footer {
   padding-top: 25px;
 }
 
+.title-column {
+  max-width: 50%;
+}
+.title-column img {
+  max-width: 100%;
+}
 .info {
   display: flex;
   padding-top: 50px;
@@ -167,15 +173,28 @@ footer {
 
 .case-study {
   padding: 60px;
+  padding-left: 110px;
+  padding-right: 110px;
+  justify-content: center;
+  text-align: center;
 }
 
 .case-study h1 {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   font-family: Taviraj;
   font-size: 50px;
   color: #505050;
+  text-align: left;
 }
 
+.case-study h3 {
+  padding-bottom: 35px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 300;
+  color: #938D8D;
+  text-align: left;
+}
 .case-study b {
   font-weight: 500;
   color: #558CF6;
@@ -183,23 +202,25 @@ footer {
 .case-study p {
   font-family: Poppins;
   color: #505050;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   padding-bottom: 40px;
+  text-align: left;
 }
 
 .case-study h2 {
   font-family: Poppins;
   color: #505050;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   padding-bottom: 40px;
+  text-align: left;
 }
 
 .case-study h5 {
   font-family: Poppins;
   color: #938D8D;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   text-align: center;
   padding-bottom: 40px;
@@ -214,4 +235,156 @@ footer {
   font-weight: 500;
   text-decoration: underline;
   color: #558CF6;
+}
+
+#mindmap {
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+#mindmap-text {
+  font-family: Poppins;
+  color: #505050;
+  font-size: 30px;
+  font-weight: 400;
+  color: #558CF6;
+}
+
+.options-postit {
+  display: block;
+  width: 400px;
+  background-color: #FFF7B0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.options-postit p {
+  padding: 50px;
+  line-height: 1.75;
+}
+
+.options-postit b {
+  color: black;
+  font-weight: 600px;
+}
+.bottom-postits {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#zoom-postit {
+  background-color: #C3E6FF;
+  width: 400px;
+  height: 400px;
+  margin-right: 5px;
+}
+
+#zoom-postit p {
+  padding: 25px;
+}
+#zoom-postit b {
+  color: black;
+  font-weight: 600;
+}
+
+#pronto-postit {
+  background-color: #E4D7FF;
+  width: 400px;
+  height: 400px;
+  margin-left: 5px;
+}
+
+#pronto-postit p {
+  padding: 25px;
+  font-size: 13px;
+}
+#pronto-postit b {
+  color: black;
+  font-weight: 600;
+}
+
+#quotes {
+  max-width: 80%;
+  padding-bottom: 40px;
+}
+
+#stage2qs {
+  max-width: 40%;
+  padding-bottom: 40px;
+}
+
+#chatSearch {
+  max-width: 25%;
+  padding-bottom: 40px;
+}
+
+#chat2 {
+  max-width: 40%;
+  padding-bottom: 40px;
+}
+
+#attachingFiles {
+  max-width: 40%;
+  padding-bottom: 40px;
+}
+
+.saveChat {
+  display: flex;
+  justify-content: center;
+}
+
+.saveChatImg {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.dm {
+  max-width: 25%;
+  padding-bottom: 40px;
+}
+
+.breakoutChat {
+  display: flex;
+  justify-content: center;
+}
+
+.breakout {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  max-width: 35%;
+}
+
+#chat3 {
+  max-width: 30%;
+  padding-bottom: 40px;
+}
+
+.compImg {
+  max-width: 1500px;
+  width: 70%;
+  padding-bottom: 50px;
+}
+
+.table {
+  padding-bottom: 50px;
+  max-width: 60%;
+}
+
+.graph {
+  padding-bottom: 50px;
+  max-width: 60%;
+}
+
+#prototype1 {
+  width:85%;
+  max-width: 1475px;
+  padding-bottom: 50px;
 }
