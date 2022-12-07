@@ -124,6 +124,19 @@ footer {
 .top-title {
   display: flex;
 }
+
+#img-col {
+  width:60%;
+}
+
+#text-col {
+  width:40%;
+}
+
+#title-img {
+  width:100%;
+}
+
 #title {
   padding-top: 50px;
   font: Taviraj;
@@ -142,12 +155,6 @@ footer {
   padding-top: 25px;
 }
 
-.title-column {
-  max-width: 50%;
-}
-.title-column img {
-  max-width: 100%;
-}
 .info {
   display: flex;
   padding-top: 50px;
@@ -387,4 +394,32 @@ footer {
   width:85%;
   max-width: 1475px;
   padding-bottom: 50px;
+}
+
+.redesign-image {
+  max-width: 1000px;
+  width: 60%;
+  padding-bottom: 40px;
+}
+
+.signifier {
+
+}
+
+.signifier-image {
+  max-width: 30%;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.iteration {
+  display: flex;
+  justify-content: center;
+}
+
+.iteration-image {
+  max-width: 600px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
