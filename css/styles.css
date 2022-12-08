@@ -35,7 +35,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background: #F6F2E6;
-  padding: 2.5%;
+  padding: 1%;
   transition: .3s;
   box-shadow: 0px 0px 10px rgb(0 0 0 /10%);
 }
@@ -54,7 +54,7 @@ header{
 
 .logo img{
   max-width: 100%;
-  width:50px;
+  width:40px;
   height: auto;
 }
 
@@ -616,4 +616,108 @@ span.active{
   font-size: 65px;
   font-weight: 500;
   color: #878787;
+}
+
+.nineteen {
+  display: flex;
+  justify-content: center;
+}
+
+.nineteen-column {
+  width: 33%;
+}
+
+.fifteen {
+  display: flex;
+  justify-content: center;
+}
+
+.fifteen-column {
+  width: 33%;
+}
+
+#vis41 p {
+  font-size: 40px;
+  color: #878787;
+  font-weight: 300;
+}
+
+#vis41 b {
+  font-size: 40px;
+  color: #878787;
+  font-weight: 500;
+}
+
+#vis41-title {
+  padding: 15px;
+  padding-left: 50px;
+}
+
+.connotative {
+  display: flex;
+  padding: 30px;
+}
+
+.connotative-column {
+  padding: 10px;
+}
+
+.connotative-div {
+  padding-bottom: 10px;
+}
+
+.connotative-div img{
+  max-width: 100%
+}
+.connotative-row1 {
+  display: flex;
+  justify-content: center;
+}
+
+.connotative-row1 img {
+  width: 45%;
+  max-width: 160px;
+  padding: 10px;
+}
+
+.denotative-top {
+  display: flex;
+  max-width: 100%;
+}
+
+#denotative-main {
+  max-width: 400px;
+  width:100%;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.denotative-main {
+  justify-content: center;
+  text-align: center;
+  max-width: 50%;
+}
+
+.denotative .row1 {
+  display: flex;
+}
+
+.denotative-top-rows img {
+  width: 130px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.denotative-top-rows {
+  padding-left: 30px;
+}
+
+.denotative-bottom img {
+  width: 130px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.denotative-bottom {
+  padding-left: 30px;
 }
