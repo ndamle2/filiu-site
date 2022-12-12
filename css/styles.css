@@ -698,7 +698,7 @@ span.active{
   max-width: 50%;
 }
 
-.denotative .row1 {
+.denotative .d-row1 {
   display: flex;
 }
 
@@ -719,5 +719,57 @@ span.active{
 }
 
 .denotative-bottom {
+  padding-left: 30px;
+}
+
+.denotative-top {
+  display: flex;
+  max-width: 100%;
+}
+
+.image-top {
+  display: flex;
+}
+
+#image-making-main {
+  max-width: 370px;
+  width:100%;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.image-making-main {
+  justify-content: center;
+  text-align: center;
+  max-width: 50%;
+}
+
+.image-top-rows .i-row1 {
+  display: flex;
+}
+
+.image-top-rows img {
+  width: 130px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.image-top-rows {
+  padding-left: 30px;
+}
+
+.image-bottom img {
+  width: 130px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.i-row5 img {
+  width: 175;
+  padding: 10px;
+  max-width: 100%;
+}
+.image-bottom {
   padding-left: 30px;
 }
