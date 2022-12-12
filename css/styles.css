@@ -773,3 +773,16 @@ span.active{
 .image-bottom {
   padding-left: 30px;
 }
+
+#vis80 p {
+  font-size: 40px;
+  color: #878787;
+  font-weight: 300;
+  padding-left: 30px;
+}
+
+#vis80 b {
+  font-size: 40px;
+  color: #878787;
+  font-weight: 500;
+}
