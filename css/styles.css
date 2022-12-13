@@ -766,7 +766,7 @@ span.active{
 }
 
 .i-row5 img {
-  width: 175;
+  width: 175px;
   padding: 10px;
   max-width: 100%;
 }
@@ -785,4 +785,34 @@ span.active{
   font-size: 40px;
   color: #878787;
   font-weight: 500;
+}
+
+#vis80 .top-row {
+  display: flex;
+  padding-left: 30px;
+}
+
+#vis80 .top-row img {
+  max-width: 400px;
+  width: 16%;
+  padding: 10px;
+}
+
+#vis80 #horizontal {
+  max-width: 600px;
+  width: 19%;
+  height: 14%;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+#vis80 .row {
+  display: flex;
+  padding-left: 30px;
+}
+
+#vis80 .row img{
+  width: 15%;
+  padding: 10px;
+  max-width: 300px;
 }
