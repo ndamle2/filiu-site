@@ -18,7 +18,17 @@ function visToUI() {
     document.querySelector('#exp-section>#ui').classList.add('active');
 }
 
-function playTab(elem) {
-  document.querySelector('#play-nav-text>.active').classList.remove('active');
-  elem.classList.add('active');
-}
+//function playTab(elem) {
+  //document.querySelector('#play-nav-text>.active').classList.remove('active');
+  //elem.classList.add('active');
+  //if(document.getElementById("fine") == elem) {
+    //alert('hello');
+  //}
+  //if(document.getElementById("digital") == elem) {
+    //forEach((document.queryAllSelector('.play-sections'), i) => {
+        //i.classList.remove('shown');
+    //});
+
+  //}
+//}
+//
