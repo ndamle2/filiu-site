@@ -18,17 +18,30 @@ function visToUI() {
     document.querySelector('#exp-section>#ui').classList.add('active');
 }
 
-//function playTab(elem) {
-  //document.querySelector('#play-nav-text>.active').classList.remove('active');
-  //elem.classList.add('active');
-  //if(document.getElementById("fine") == elem) {
-    //alert('hello');
-  //}
-  //if(document.getElementById("digital") == elem) {
-    //forEach((document.queryAllSelector('.play-sections'), i) => {
-        //i.classList.remove('shown');
-    //});
-
-  //}
-//}
-//
+function playTab(elem) {
+  document.querySelector('#play-nav-text>.active').classList.remove('active');
+  elem.classList.add('active');
+  let els = document.querySelectorAll('.shown');
+  els.forEach(function(el) {
+    el.classList.remove('shown');
+  });
+  if(document.getElementById("fine") == elem) {
+    document.getElementById('investigation').parentElement.classList.add('shown');
+    document.getElementById('oli').parentElement.classList.add('shown');
+    document.getElementById('surreal').parentElement.classList.add('shown');
+  }
+  if(document.getElementById("digital") == elem) {
+    document.getElementById('procreate').parentElement.classList.add('shown');
+  }
+  if(document.getElementById("multi") == elem) {
+    document.getElementById('multimedia').parentElement.classList.add('shown');
+  }
+  if(document.getElementById("sketch") == elem) {
+    document.getElementById('2019').parentElement.classList.add('shown');
+    document.getElementById('2015').parentElement.classList.add('shown');
+  }
+  if(document.getElementById("course") == elem) {
+    document.getElementById('vis41').parentElement.classList.add('shown');
+    document.getElementById('vis80').parentElement.classList.add('shown');
+  }
+}

@@ -1,0 +1,191 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: Poppins;
+
+}
+
+body{
+  background: #F7F2E6;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F7F2E6;
+  padding: 2.5%;
+  transition: .3s;
+  box-shadow: 0px 0px 10px rgb(0 0 0 /10%);
+  margin-bottom: 80px;
+  font-family: Poppins;
+}
+
+
+.work-nav:hover {
+  color: #EBA937;
+}
+.everyday-nav:hover {
+  color: #ABCDA2;
+}
+.about-nav:hover {
+  color: #8CA9E1;
+}
+.play-nav:hover {
+  color: #BD295F;
+}
+
+.logo img{
+  max-width: 100%;
+  width:40px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar li{
+  position: relative;
+}
+.navbar a{
+  font-size: 25px;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 10px 18.8px;
+  color: #F7F2E6;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  letter-spacing: .1rem;
+}
+.navbar .about-nav {
+  color: #8CA9E1;
+}
+.navbar a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #BA9369;
+  bottom: -3px;
+  left: 0;
+  transition: ease .40s;
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  padding-bottom: 50px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #F7F2E6;
+}
+.footer-chat {
+  font-size: 22px;
+  font-weight: 500;
+}
+.footer-name {
+  font-size: 17px;
+  font-weight: 300;
+  color: #D6D0C3;
+}
+
+
+.about-text {
+  padding: 150px;
+}
+
+
+#hello{
+  float: left;
+  margin-right: 50px;
+  max-width: 100%;
+  width:250px;
+  height: auto;
+}
+
+.about-text h3{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Taviraj';
+  color: #C77492;
+
+}
+.about-text p{
+  font-size: 20px;
+  color: black;
+  font-weight: 300;
+  font-style: normal;
+}
+.about-text b{
+  font-weight: 500;
+}
+.green-highlight {
+  background-color: #E1E2C4;
+  color: black;
+}
+
+
+.work-text {
+  font-size: 85px;
+  fill: tan;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+.play-text {
+  font-size: 85px;
+  fill: #D08085;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+.about-text {
+  font-size: 85px;
+  fill: #D08085;
+  font-weight: 700;
+}
+
+.about {
+  position: absolute;
+  padding-top: 50px;
+  width: 100%;
+}
+
+#folder {
+  width: 100%;
+  height: auto;
+}
+
+.about .ui_ux {
+  position: absolute;
+  top: 12.5%;
+  left: 26%;
+  background-color: Transparent;
+  color: #505050;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 12px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
