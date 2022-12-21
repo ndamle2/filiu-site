@@ -79,7 +79,7 @@
          transform="matrix(1,0,0,1,13.9289215,16.285593900000002)" />
       <text
             xml:space="preserve"
-            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.2661px;line-height:0;font-family:'Arial';-inkscape-font-specification:'Arial';white-space:pre;inline-size:0;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:1.724;stroke-dasharray:none;stroke-opacity:1"
+            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:60.2661px;line-height:0;font-family:'Arial';-inkscape-font-specification:'Arial';white-space:pre;inline-size:0;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:1.724;stroke-dasharray:none;stroke-opacity:1"
             x="89.290741"
             y="104.78748"
             id="work"
@@ -87,7 +87,7 @@
               id="tspan899"
               x="89.290741"
               y="104.78748"
-              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.2661px;font-family:'Poppins';-inkscape-font-specification:'Poppins';stroke:#ffffff;stroke-width:1.724;stroke-dasharray:none;stroke-opacity:1">work</tspan></text>
+              style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:60.2661px;font-family:'Poppins';-inkscape-font-specification:'Poppins';stroke:#ffffff;stroke-width:1.724;stroke-dasharray:none;stroke-opacity:1">work</tspan></text>
     </a>
     <a href="play.html" class="svg">
       <path
@@ -105,7 +105,7 @@
            id="tspan899-4"
            x="89.290741"
            y="104.78748"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.2661px;font-family:'Poppins';-inkscape-font-specification:'Poppins';stroke:#ffffff;stroke-width:1.724;stroke-dasharray:none;stroke-opacity:1">play</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:60.2661px;font-family:'Poppins';-inkscape-font-specification:'Poppins';stroke:#ffffff;stroke-width:1.724;stroke-dasharray:none;stroke-opacity:1">play</tspan></text>
     </a>
     <a href="about.html" class="svg">
       <path
@@ -115,7 +115,7 @@
          transform="matrix(1,0,0,1,14.5483128,255.2004877)" />
          <text
             xml:space="preserve"
-            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:'Poppins';-inkscape-font-specification:'Poppins';fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:1.625;stroke-dasharray:none;stroke-opacity:1"
+            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:42.6667px;font-family:'Poppins';-inkscape-font-specification:'Poppins';fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:1.625;stroke-dasharray:none;stroke-opacity:1"
             x="55.345505"
             y="443.50195"
             id="text8348"><tspan
@@ -132,7 +132,7 @@
          transform="matrix(1,0,0,1,253.4494538,254.800024)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:'Poppins';-inkscape-font-specification:'Poppins';fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:1.625;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:42.6667px;font-family:'Poppins';-inkscape-font-specification:'Poppins';fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:1.625;stroke-dasharray:none;stroke-opacity:1"
          x="324.87131"
          y="437.37253"
          id="text8348-3"><tspan
@@ -167,7 +167,7 @@
         <h1 class="experience-company">Wordrive</h3>
         <h2 class="experience-subheading">Passion Project | Designer, Researcher</h1>
         <h3 class="experience-description">Making word storage and definition referencing easier for all readers alike.</h3>
-        <button class="wordrive-button" type="button">View Project</button>
+        <button id="clickable"class="wordrive-button" type="button">View Project</button>
       </div>
     </div>
     <div class="exp">
@@ -178,7 +178,7 @@
         <h1 class="experience-company">Zoom Redesign</h3>
         <h2 class="experience-subheading">Course Project | Designer, Researcher</h1>
         <h3 class="experience-description">Reinventing written communication on videotelephony platforms.</h3>
-        <button class="zoom-button" type="button">View Case Study</button>
+        <button id="clickable"class="zoom-button" type="button" onclick="window.location.href='zoom.html'">View Case Study</button>
       </div>
     </div>
     <div class="exp" id="dxd">
@@ -189,7 +189,7 @@
         <h1 class="experience-company">DXD</h3>
         <h2 class="experience-subheading">Passion Project | Designer, Researcher</h1>
         <h3 class="experience-description">Connecting designers and developers for a seamless handoff from the seed.</h3>
-        <button class="zoom-button" type="button">Coming Soon!</button>
+        <button class="dxd-button" type="button">Coming Soon!</button>
       </div>
     </div>
   </div>
@@ -208,22 +208,33 @@
       <div class="dormit-img">
         <img class="visexp1" src="img/vis-exp1.png">
       </div>
-      <div class="wordrive-text">
-        <h1 class="experience-company">Wordrive</h3>
-        <h2 class="experience-subheading">Passion Project | Designer, Researcher</h1>
-        <h3 class="experience-description">Making word storage and definition referencing easier for all readers alike.</h3>
-        <button class="wordrive-button" type="button">View Project</button>
+      <div class="dormit-text">
+        <h1 class="experience-company">Dormit</h3>
+        <h2 class="experience-subheading">UCSD Startup | Logo, Flyer Designer</h1>
+        <h3 class="experience-description">Bringing late night food delivery to the heart of the UCSD campus.</h3>
+        <button id="clickable" class="dormit-button" type="button">View Project</button>
       </div>
     </div>
     <div class="exp">
-      <div class="zoom-img">
-        <img class="uiexp2" src="img/ui-exp2.png">
+      <div class="aisc-img">
+        <img class="visexp2" src="img/aisc.png">
       </div>
-      <div class="zoom-text">
-        <h1 class="experience-company">Zoom Redesign</h3>
-        <h2 class="experience-subheading">Course Project | Designer, Researcher</h1>
-        <h3 class="experience-description">Reinventing written communication on videotelephony platforms.</h3>
-        <button class="zoom-button" type="button">View Case Study</button>
+      <div class="aisc-text">
+        <h1 class="experience-company">AI Student Collective</h3>
+        <h2 class="experience-subheading">Non-Profit  | Logo, Flyer, Branding</h1>
+        <h3 class="experience-description">Providing accessible AI literacy and ethical experiences for the future of our workforce.</h3>
+        <button class="aisc-button" type="button">Coming Soon!</button>
+      </div>
+    </div>
+    <div class="exp">
+      <div class="sacf-img">
+        <img class="visexp3" src="img/sacf.png">
+      </div>
+      <div class="sacf-text">
+        <h1 class="experience-company">Student-Athlete Community Foundation</h3>
+        <h2 class="experience-subheading">Non-Profit | Logo, Flyer, Branding</h1>
+        <h3 class="experience-description">Giving back to the athletics community through a shared sense of service.</h3>
+        <button class="sacf-button" type="button">Coming Soon!</button>
       </div>
     </div>
   </div>
