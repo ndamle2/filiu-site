@@ -370,12 +370,11 @@ footer {
 
 .zoom-button:hover {
   background-color: #60C8FF;
-  transition: .3s;
 }
 .dxd-img {
   flex: 50%;
   text-align: center;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 .dxd-text {
   width: 50%;
@@ -385,7 +384,7 @@ footer {
   justify-content: center;
 }
 .uiexp3 {
-  width: 58%;
+  width: 57%;
   min-width: 250px;
   height: auto;
   margin: auto;
@@ -426,6 +425,9 @@ footer {
   max-width: 150px;
 }
 
+.dormit-button:hover {
+  background-color: #8458FE;
+}
 .aisc {
   display: flex;
   align-items: center;
@@ -463,6 +465,7 @@ footer {
   transform:scale(1.1,1.1);
   -webkit-transform:scale(1.1,1.1);
   -moz-transform:scale(1.1,1.1);
+  transition: .3s;
 }
 
 .sacf {
