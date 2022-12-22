@@ -331,6 +331,10 @@ footer {
   border-radius: 10px;
   max-width: 150px;
 }
+
+.wordrive-button:hover {
+  background-color: #8458FE;
+}
 .zoom {
   display: flex;
   align-items: center;
@@ -356,12 +360,17 @@ footer {
 
 }
 .zoom-button {
-  background-color: #6DC2EF;
+  background-color: #A4DDFC;
   color: white;
   padding: 5px 3px;
   border: none;
   border-radius: 10px;
   max-width: 150px;
+}
+
+.zoom-button:hover {
+  background-color: #60C8FF;
+  transition: .3s;
 }
 .dxd-img {
   flex: 50%;
