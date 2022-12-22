@@ -151,7 +151,7 @@ footer {
   font-family: 'Taviraj', serif;
 }
 
-.home-text span {
+.home-text h1 span {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -222,6 +222,19 @@ footer {
   font-family: 'Poppins', sans-serif;
 }
 
+.visual-tab:hover ~ #visual-text {
+  fill: #505050;
+}
+#visual-text:hover {
+  fill: #505050;
+}
+
+.UI-tab:hover ~ #UI-text {
+  fill: #505050;
+}
+#UI-text:hover {
+  fill: #505050;
+}
 .ui-top {
   width:80%;
   display: block;
@@ -515,6 +528,11 @@ footer {
   font-family: Poppins;
   letter-spacing: 3px;
 }
+.play-nav-text span:hover {
+  font-style: italic;
+  font-family: Taviraj;
+}
+
 span.active{
   color: #505050;
   font-family: Taviraj;
