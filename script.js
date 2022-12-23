@@ -43,5 +43,6 @@ function playTab(elem) {
   if(document.getElementById("course") == elem) {
     document.getElementById('vis41').parentElement.classList.add('shown');
     document.getElementById('vis80').parentElement.classList.add('shown');
+    document.getElementById('dsgn1').parentElement.classList.add('shown');
   }
 }

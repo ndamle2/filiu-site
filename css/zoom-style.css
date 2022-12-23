@@ -70,6 +70,36 @@ header{
   position: absolute;
   width: 0;
   height: 2px;
+  background: #EBA937;
+  bottom: -3px;
+  left: 0;
+  transition: ease .40s;
+}
+
+.navbar .play-nav::after{
+  background: #BD295F;
+}
+
+.navbar .about-nav::after{
+  background: #8CA9E1;
+}
+
+.navbar .everyday-nav::after{
+  background: #ABCDA2;
+}
+
+.navbar .resume-nav::after{
+  background: black;
+}
+
+.resume-nav:hover {
+  color: black;
+}
+.navbar a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
   background: #BA9369;
   bottom: -3px;
   left: 0;
