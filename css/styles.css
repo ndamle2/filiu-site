@@ -52,6 +52,10 @@ header{
   color: #BD295F;
 }
 
+.resume-nav:hover {
+  color: black;
+}
+
 .logo img{
   max-width: 100%;
   width:40px;
@@ -84,10 +88,26 @@ header{
   position: absolute;
   width: 0;
   height: 2px;
-  background: #BA9369;
+  background: #EBA937;
   bottom: -3px;
   left: 0;
   transition: ease .40s;
+}
+
+.navbar .play-nav::after{
+  background: #BD295F;
+}
+
+.navbar .about-nav::after{
+  background: #8CA9E1;
+}
+
+.navbar .everyday-nav::after{
+  background: #ABCDA2;
+}
+
+.navbar .resume-nav::after{
+  background: black;
 }
 
 .navbar a:hover::after{
@@ -564,47 +584,55 @@ span.active{
 
 #investigation {
   display: flex;
-  flex-shrink: 0;
   padding: 0 4px 4px 4px;
 }
+
 .img-div {
   display: flex;
   width: 250px;
   height: 250px;
   justify-content: center;
   overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#investigation .img-div {
+  justify-content: center;
+  width: 90%;
 }
 .investigation-img{
   min-height: 50px;
   min-width: 50px;
-  width: 90%;
+  width: 100%;
+  height:auto;
   padding-top: 15px;
-  padding-bottom: 15px;
+
   object-fit: cover;
 }
 
 #investigation-text p{
   font-family: 'Poppins', sans-serif;
   font-size: 65px;
-  font-weight: 100;
+  font-weight: 300;
   color: #878787;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   overflow: hidden;
-  padding-top: 150px;
-  padding-left: 75px;
+  padding-top: 100px;
+  padding-left: 40px;
 }
 
 #investigation-text b{
   font-family: 'Poppins', sans-serif;
   font-size: 65px;
-  font-weight: 400;
+  font-weight: 600;
   color: #878787;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   overflow: hidden;
-  padding-top: 200px;
-  padding-left: 75px;
+  padding-top: 50px;
+  padding-left: 40px;
 }
 .investigation-column {
   flex: 25%;
