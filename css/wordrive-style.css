@@ -158,7 +158,7 @@ footer {
   margin-top: 60px;
   background-image: url("../img/wordrive/wordrive-background.png");
   background-size: 100% 100%;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -167,20 +167,21 @@ footer {
 .title-text {
   padding-left: 50px;
   width:45%;
-  height: 985px;
+  height: 955px;
+  text-align: center;
 }
 #title-banner h1 {
-  padding-top: 30px;
+  padding-top: 90px;
   font-family: "Taviraj", serif;
   color: white;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 500;
 }
 
 #title-banner h3 {
   padding-top: 20px;
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: white;
 }
@@ -188,7 +189,7 @@ footer {
 #title-banner h4 {
   padding-top: 20px;
   font-family: "Poppins", sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   color: white;
 }
@@ -196,12 +197,13 @@ footer {
 #title-banner h5 {
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   color: white;
 }
 .main-body {
   padding-left: 50px;
+  padding-right: 50px;
 }
 .main-body h1 {
   padding-bottom: 35px;
@@ -246,7 +248,6 @@ footer {
   color: #938D8D;
   font-size: 25px;
   font-weight: 300;
-  text-align: center;
   padding-bottom: 40px;
 }
 
@@ -259,4 +260,175 @@ footer {
   font-weight: 500;
   text-decoration: underline;
   color: #558CF6;
+}
+
+.functionality-list {
+  font-size: 14px;
+  margin-left: 20px;
+  display: list-item;
+  padding-bottom: 30px;
+}
+
+#pre-list {
+  padding-bottom: 5px;
+}
+
+.functionality-list li {
+  list-style-type: disc;
+  font-family: "Poppins", sans-serif;
+  color: #505050;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.functionality-list .italics {
+  font-style: italic;
+}
+
+.wordrive-ordered {
+  display: list-item;
+  font-size: 35px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin-left: 60px;
+}
+
+.wordrive-ordered h5{
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: #505050;
+}
+
+#purple {
+  color: #A898EA;
+}
+#green {
+  color: #8CC770;
+}
+#orange {
+  color: #ECBE1F;
+}
+#blue {
+  color: #8FBFEB;
+}
+
+.wordrive-ordered li {
+  text-align: left;
+  font-size: 40px;
+}
+
+.wordrive-ordered .wordrive-sublist {
+  display: list-item;
+  padding-bottom: 20px;
+}
+
+.wordrive-ordered .wordrive-sublist li {
+  list-style-type: disc;
+  font-family: "Poppins", sans-serif;
+  color: #505050;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#comp-analysis {
+  width: 65%;
+}
+
+.companalysis {
+  text-align: center;
+}
+
+#top-frames {
+  display: flex;
+  justify-content: center;
+}
+
+#top-frames img {
+  width: 30%;
+  padding: 30px;
+}
+
+#bottom-frames {
+  display: flex;
+  justify-content: center;
+}
+
+#bottom-frames img {
+  width: 20%;
+  padding: 10px;
+}
+.set-img-div {
+  text-align: center;
+}
+.set-img {
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.proto {
+  text-align: center;
+}
+
+.proto-img {
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.annotated-images {
+  text-align: center;
+}
+
+.annotated-full {
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.annotated-half {
+  width: 40%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.access p img {
+  padding-left: 10px;
+  padding-right: 3px;
+  vertical-align:middle;
+}
+
+.access-sublist {
+  padding-left: 30px;
+}
+
+.flexed-list {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.flexed-text {
+  padding-right: 50px;
+}
+
+#access8 {
+  width: 30%;
+}
+
+#access9 {
+  width:50%;
+}
+
+.centered {
+  text-align: center;
+}
+
+#access11 {
+  width:25%;
+}
+#access12 {
+  width:50%;
 }

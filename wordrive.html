@@ -50,7 +50,7 @@
       <p>I took the design initiative on this, but the people who conceptualized and made it actually come to
         life are Aaron Z. Zhu, Columbia ‘25 studying Computer Science and Linguistics, and Andrew S. Chen,
         Stanford ‘25 studying Mathematics and Computer Science after developing the Chen Method for language-learning!
-        They were enthusiastic to get their hands dirty when learning the nuances of design, and definitely
+        They were enthusiastic to get their hands dirty when learning the nuances of design, and I definitely
         encourage you to take a look at their work.</p>
       <h1>Project Plan</h1>
       <p>(Software Requirements Specification given to me when onboarded)</p>
@@ -64,12 +64,157 @@
       <p>The intended audience is Google Chrome users, particularly those who read on their browser and are
         interested in boosting their retention of vocabulary or keeping track of new words they learn.</p>
       <h2>Functionality</h2>
-      <p>Users should be able to:</p>
-      <ul style="list-style-type: square">
+      <p id="pre-list">Users should be able to:</p>
+      <ul class="functionality-list">
         <li>highlight a word or phrase on a web page and save it</li>
         <li>review the list of words they have saved</li>
         <li>manually enter a word (not through highlighting)</li>
+        <li>remove words from their current list</li>
+        <li>access a history of all words added to the list</li>
+        <li>access the URL(s) of the page that the word came from</li>
+        <li>export words to documents</li>
+        <li class="italics">access the original context(s) that the word existed in, without needing to access the URL</li>
+        <li class="italics">for foreign languages, resolve ambiguity between similar words</li>
       </ul>
+      <p>*Italics indicate potential functionality specifications for the future</p>
+      <h2>Platform</h2>
+      <p>The Chrome extension will be developed locally, using APIs made available by Google Chrome,
+        and then published to the Google Web Store.</p>
+      <h2>Development Responsibilities</h2>
+      <p>Andrew S. Chen and Aaron Z. Zhu will be developing the software.</p>
+      <h2>Functional Requirements</h2>
+      <p id="pre-list">Users should be able to:</p>
+      <ul class="functionality-list">
+        <li>highlight the text on a block of text they are reading</li>
+        <li>review the words they have saved</li>
+      </ul>
+      <h2>User Interfaces</h2>
+      <p>Front-end software: Google Chrome, Chrome Extension UI</p>
+      <h2>Hardware Interfaces</h2>
+      <p>Any operating system which runs Google Chrome</p>
+      <h2>Performance, Safety, and Security Requirements</h2>
+      <p>None listed so far</p>
+      <h2>Technologies Used</h2>
+      <p>Web development: HTML, CSS, JavaScript, JavaScript libraries</p>
+      <p id="pre-list">Wordrive is, in all its functionality:</p>
+      <ol class="wordrive-ordered">
+        <li>
+          <h5>1. <span id="purple">open source</span></h5>
+          <ul class="wordrive-sublist">
+            <li>It is not a ‘marketable’ application in the traditional sense;
+              there are no user upgrades or transactions (there are no ‘premium’ accounts, for
+              example); users should not feel like they are using a tool made by a corporation.</li>
+            <li>It is intended to be democratizing and free-to-use.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>2. <span id="green">for reference and tracking more than studying</span></h5>
+          <ul class="wordrive-sublist">
+            <li>It is not intended to be used for flashcards or rote memorization.</li>
+            <li>It does not display entire word definitions; instead, it links users to reference
+              materials and the sites on which they saved their words.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>3. <span id="orange">bookish</span></h5>
+          <ul class="wordrive-sublist">
+            <li>It will be of greatest interest to students — of literature and foreign languages
+              especially — avid readers, and language learners.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>4. <span id="blue">intelligently energetic</span></h5>
+          <ul class="wordrive-sublist">
+            <li>It is smart, powerful, accessible, but not overbearingly flashy or conspicuous —
+              it aids a user’s learning experience rather than takes over it.</li>
+          </ul>
+        </li>
+      </ol>
+      <h1>Preliminary Competitive Analysis (Brief)</h1>
+      <div class="companalysis">
+        <img src="img/wordrive/comp-analysis.png" alt="" id="comp-analysis">
+      </div>
+      <h1>Lo-fi Frames</h1>
+      <div id="top-frames">
+        <img src="img/wordrive/frame1.png" alt="">
+        <img src="img/wordrive/frame2.png" alt="">
+      </div>
+      <div id="bottom-frames">
+        <img src="img/wordrive/frame3.png" alt="">
+        <img src="img/wordrive/frame4.png" alt="">
+        <img src="img/wordrive/frame5.png" alt="">
+      </div>
+      <h1>Initial Iterations</h1>
+      <h2>Set 1</h2>
+      <div class="set-img-div">
+        <img class="set-img" src="img/wordrive/set1.png" alt="">
+      </div>
+      <h2>Set 2</h2>
+      <div class="set-img-div">
+        <img class="set-img" src="img/wordrive/set2.png" alt="">
+      </div>
+      <h1>Final Prototype</h1>
+      <h2>Prototype To-Size</h2>
+      <div class="proto">
+        <img class="proto-img" src="img/wordrive/proto.png" alt="">
+      </div>
+      <h2>Run-Through</h2>
+      <h2>Annotated Features</h2>
+      <div class="annotated-images">
+        <img class="annotated-full" src="img/wordrive/annotated1.png" alt="">
+        <img class="annotated-half" src="img/wordrive/annotated2.png" alt="">
+        <img class="annotated-full" src="img/wordrive/annotated3.png" alt="">
+        <img class="annotated-full" src="img/wordrive/annotated4.png" alt="">
+        <img class="annotated-half" src="img/wordrive/annotated5.png" alt="">
+        <img class="annotated-full" src="img/wordrive/annotated6.png" alt="">
+        <img class="annotated-half" src="img/wordrive/annotated7.png" alt="">
+        <img class="annotated-full" src="img/wordrive/annotated8.png" alt="">
+        <img class="annotated-full" src="img/wordrive/annotated9.png" alt="">
+      </div>
+      <h1>Access</h1>
+      <div class="access">
+        <h2>How to download Wordrive:</h2>
+        <p>1. Head to <a href="https://github.com/chen-sse/wordrive">https://github.com/chen-sse/wordrive</a></p>
+        <p>2. Click the green <b>&lt;&gt; Code</b> Button</p>
+        <div class="access-sublist">
+          <p>a. In the <b>Local</b> Tab<img src="img/wordrive/access1.png" alt="">
+            , select <b>Download ZIP</b><img src="img/wordrive/access2.png" alt=""></p>
+        </div>
+        <p>3. Click the <b>Extensions</b> Button<img src="img/wordrive/access3.png" alt=""><img src="img/wordrive/access4.png" alt=""></p>
+        <div class="access-sublist">
+          <p>a. Select <b>Manage Extensions</b> at the bottom<img src="img/wordrive/access5.png" alt=""></p>
+        </div>
+        <p>4. Select <b>Load Unpacked</b><img src="img/wordrive/access6.png" alt=""></p>
+        <div class="access-sublist">
+          <p>a. Make sure <b>Developer Mode</b> is on<img src="img/wordrive/access7.png" alt=""></p>
+        </div>
+        <div class="flexed-list">
+          <div class="flexed-text">
+            <p>5. Select the file downloaded from Step 3a</p>
+            <div class="access-sublist">
+              <p>a. *Make sure it’s been unzipped!</p>
+            </div>
+          </div>
+          <img id="access8"src="img/wordrive/access8.png" alt="">
+        </div>
+        <p>6. Wordrive should appear as one of your Extensions now!</p>
+        <div class="centered">
+          <img id="access9"src="img/wordrive/access9.png" alt="">
+        </div>
+        <h2>How to use Wordrive:</h2>
+        <p>1. Click the <b>Extensions</b> Button<img src="img/wordrive/access3.png" alt=""><img src="img/wordrive/access4.png" alt=""></p>
+        <div class="access-sublist">
+          <p>a. Select the <b>Pin</b> icon to pin Wordrive<img src="img/wordrive/access5.png" alt=""></p>
+        </div>
+        <div class="access-sublist">
+          <p>b. Wordrive icon should now appear next to Extensions icon<img src="img/wordrive/access10.png" alt=""></p>
+        </div>
+        <p>2. Select any word from a site, <b>right-click</b>, and <b>Add to Wordrive</b><img id="access11" src="img/wordrive/access11.png" alt=""></p>
+        <p>3. Selected word should now have appeared in the Wordrive extension!</p>
+        <div class="centered">
+          <img id="access12"src="img/wordrive/access12.png" alt="">
+        </div>
+      </div>
     </div>
   </body>
   <footer>
