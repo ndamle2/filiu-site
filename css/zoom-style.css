@@ -219,8 +219,8 @@ footer {
 
 .case-study {
   padding: 60px;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 12%;
+  padding-right: 12%;
   justify-content: center;
   text-align: center;
 }
