@@ -11,16 +11,16 @@ const IMAGE_INDEX = 117
 const INTRO_INDEX = 142
 const indices = [INVESTIGATION_INDEX, OLI_INDEX, SURREAL_INDEX, PROCREATE_INDEX, MULTIMEDIA_INDEX, YEAR2019_INDEX, YEAR2015_INDEX, CONNOTATIVE_INDEX, DENOTATIVE_INDEX, IMAGE_INDEX, INTRO_INDEX, 192]
 
-// window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-// 	//unsustainable - link nav appears to work-scroll later
-//   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-//     document.getElementById("home-nav").style.top = "0";
-//   } else {
-//     document.getElementById("home-nav").style.top = "-500px";
-//   }
-// }
+function scrollFunction() {
+	//unsustainable - link nav appears to work-scroll later
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    document.getElementById("home-nav").style.top = "0";
+  } else {
+    document.getElementById("home-nav").style.top = "-500px";
+  }
+}
 function uiToVis() {
     document.querySelector('#exp-section>.active').classList.remove('active');
     document.querySelector('#exp-section>#vis').classList.add('active');
@@ -95,6 +95,18 @@ function showSlides(n) {
 }
 
 function overlay() {
+  // let investigationSlides = document.querySelectorAll('#investigation img')
+  // let oliSlides = document.querySelectorAll('#oli img')
+  // let surrealSlides = document.querySelectorAll('#surreal img')
+  // let procreateSlides = document.querySelectorAll('#procreate img')
+  // let multimediaSlides = document.querySelectorAll('#multimedia img')
+  // let nineteenSlides = document.querySelectorAll('div.nineteen img')
+  // let fifteenSlides = document.querySelectorAll('.fifteen img')
+  // let vis41Slides = document.querySelectorAll('#vis41 img')
+  // let introSlides = document.querySelectorAll('#vis80 img')
+
+  // let slides = [investigationSlides, oliSlides, surrealSlides, procreateSlides, multimediaSlides, nineteenSlides, fifteenSlides, vis41Slides, introSlides]
+  
   const buttons = document.querySelectorAll('.thumbnail');
   const overlay = document.querySelector('.overlay');
   const overlayImage = document.querySelector('.overlay__inner img');
