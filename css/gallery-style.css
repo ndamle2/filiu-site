@@ -20,23 +20,62 @@ button {
   align-content: space-evenly;
 }
 
-.project {
+#oli-grid {
+  width: 65%;
+  min-height: 40vh;
+  background: #F7F2E6;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 0.3fr));
+  grid-template-rows: 250px 250px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  border: solid blue;
+}
+
+#surreal-grid {
+  width: 75%;
+  min-height: 40vh;
+  background: #F7F2E6;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 0.3fr));
+  grid-template-rows: 200px 200px 200px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  border: solid blue;
+  z-index: 2 !important;
+}
+
+#procreate-grid {
+  width: 75%;
+  min-height: 40vh;
+  background: #F7F2E6;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 0.3fr));
+  grid-template-rows: 200px 200px 200px 200px 200px 200px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  border: solid blue;
+}
+
+.thumbnail {
   position: relative;
   display: flex;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  border: solid red;
 }
-.project img {
+.thumbnail img {
   position: absolute;
   font-size: 0;
-  width: 250px;
-  height: 250px;
   justify-content: center;
   overflow: hidden;
   margin-left: 20px;
 }
-.project p {
+.thumbnail p {
   position: absolute;
   text-align: center;
   width: 100%;
@@ -45,7 +84,7 @@ button {
   letter-spacing: 2px;
   z-index: 3;
 }
-.project .grid__title {
+.thumbnail .grid__title {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -58,8 +97,12 @@ button {
   color: #474545;
   letter-spacing: 2px;
 }
+.thumbnail .standard {
+  width: 250px;
+  height: 250px;
+}
 
-.project:hover .grid__overlay {
+.thumbnail:hover .grid__overlay {
   transform: translateY(0%);
 }
 
@@ -134,7 +177,7 @@ button {
   color: #D1A39E;
 }
 
-.project__image {
+.thumbnail__image {
   margin-left: -50%;
 }
 
@@ -167,4 +210,13 @@ button {
 .expanded-img {
   height: 70vh;
   width: 70vh;
+}
+
+.hide {
+  z-index: -50 !important;
+}
+
+.procreate-top {
+  height: 80px;
+  width: 850px;
 }/*# sourceMappingURL=gallery-style.css.map */

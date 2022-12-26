@@ -1,13 +1,26 @@
-window.onscroll = function() {scrollFunction()};
+const INVESTIGATION_INDEX = 0
+const OLI_INDEX = 9
+const SURREAL_INDEX = 14
+const PROCREATE_INDEX = 22
+const MULTIMEDIA_INDEX = 40
+const YEAR2019_INDEX = 48
+const YEAR2015_INDEX = 65
+const CONNOTATIVE_INDEX = 78
+const DENOTATIVE_INDEX = 90
+const IMAGE_INDEX = 117
+const INTRO_INDEX = 142
+const indices = [INVESTIGATION_INDEX, OLI_INDEX, SURREAL_INDEX, PROCREATE_INDEX, MULTIMEDIA_INDEX, YEAR2019_INDEX, YEAR2015_INDEX, CONNOTATIVE_INDEX, DENOTATIVE_INDEX, IMAGE_INDEX, INTRO_INDEX, 192]
 
-function scrollFunction() {
-	//unsustainable - link nav appears to work-scroll later
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-    document.getElementById("home-nav").style.top = "0";
-  } else {
-    document.getElementById("home-nav").style.top = "-500px";
-  }
-}
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+// 	//unsustainable - link nav appears to work-scroll later
+//   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+//     document.getElementById("home-nav").style.top = "0";
+//   } else {
+//     document.getElementById("home-nav").style.top = "-500px";
+//   }
+// }
 function uiToVis() {
     document.querySelector('#exp-section>.active').classList.remove('active');
     document.querySelector('#exp-section>#vis').classList.add('active');
@@ -49,22 +62,32 @@ function playTab(elem) {
 
 
 
-let slideIndex = 1
-let slides = document.getElementsByClassName("project__image");
-
-function setSlideNum(n) {
-  slideIndex = n
-  showSlides(slideIndex)
-}
+let slideIndex = 0
+let slides = document.getElementsByClassName("thumbnail__image");
 
 function changeSlideNum(n) {
-  slideIndex += n
+  if (n == 1) {
+    let asdf = indices.indexOf(slideIndex + 1)
+
+    if (asdf >= 0) {
+      slideIndex = indices[asdf - 1]
+    } else {
+      slideIndex += 1
+    }
+  } else if (n == -1) {
+    let asdf = indices.indexOf(slideIndex)
+
+    if (asdf >= 0) {
+      slideIndex = indices[asdf + 1] - 1
+    } else {
+      slideIndex -= 1
+    }
+  }
   showSlides(slideIndex)
 }
 
 function showSlides(n) {
-  if (n > slides.length - 1) {slideIndex = 0}
-  if (n < 0) {slideIndex = slides.length - 1}
+  console.log(slideIndex)
   const overlayImage = document.querySelector('.overlay__inner img');
   const overlayCaption = document.querySelector('.overlay__inner p');
   overlayImage.src = slides[slideIndex].src
@@ -72,12 +95,13 @@ function showSlides(n) {
 }
 
 function overlay() {
-  const buttons = document.querySelectorAll('.project');
+  const buttons = document.querySelectorAll('.thumbnail');
   const overlay = document.querySelector('.overlay');
   const overlayImage = document.querySelector('.overlay__inner img');
   const overlayCaption = document.querySelector('.overlay__inner p');
 
   function open(e) {
+    console.log(slideIndex)
     overlay.classList.add('open');
     const src = e.currentTarget.querySelector('img').src;
     slideIndex = parseInt(e.currentTarget.querySelector('img').id - 1)

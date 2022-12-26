@@ -38,6 +38,29 @@
         <span id="org" onclick="playTab(this)">ORG</span> / <span id="past" onclick="playTab(this)">PAST</span></p>
     </div>
     <div class="play-sections">
+
+      <!-- POP-UP OVERLAY STUFF -->
+      <div class="overlay" id="qwer">      
+        <div class="overlay__inner" >
+          <div class="flex-container">
+            <!-- TODO: formatting stuff so arrows don't move around if images
+            are of different size -->
+            <a class="arrow-left" onclick="changeSlideNum(-1)">placeholder
+            left arrow</a>
+
+            <div class="img-with-caption">
+              <img class="expanded-img">
+              <p>caption placeholder</p>
+            </div>
+
+            <!-- TODO: replace with whatever arrow, just make sure to include onclick -->
+            <a class="arrow-right" onclick="changeSlideNum(1)">placeholder
+            right arrow</a>
+
+            </div>
+          </div>
+      </div>
+
       <!-- INVESTIGATION -->
       <div class="shown play-display">
 
@@ -48,72 +71,50 @@
 
           <section id="portfolio">
 
-            <div class="project">
+            <div class="thumbnail">
               <img src="img/play-investigation/investigation1tn.jpg" alt="poopty
               scoop"
-              class="investigation-img project__image" id="1"> 
+              class="investigation-img thumbnail__image standard" id="1"> 
             </div>
             
-            <div class="project">
+            <div class="thumbnail">
               <img src="img/play-investigation/investigation2tn.jpg" alt="222"
-              class="investigation-img project__image" id="2">
+              class="investigation-img thumbnail__image standard" id="2">
             </div>
             
-            <div class="project">
+            <div class="thumbnail">
               <img src="img/play-investigation/investigation6tn.jpg" alt=""
-              class="investigation-img project__image" id="3">
+              class="investigation-img thumbnail__image standard" id="3">
             </div>
             
-            <div class="project">
+            <div class="thumbnail">
               <img src="img/play-investigation/investigation7tn.jpg" alt=""
-              class="investigation-img project__image" id="4">
+              class="investigation-img thumbnail__image standard" id="4">
             </div>
     
-            <div class="project">
+            <div class="thumbnail">
               <img src="img/play-investigation/investigation3tn.jpg" alt=""
-              class="investigation-img project__image" id="5">
+              class="investigation-img thumbnail__image standard" id="5">
             </div>
             
-            <div class="project">
+            <div class="thumbnail">
               <img src="img/play-investigation/investigation5tn.jpg" alt=""
-              class="investigation-img project__image" id="6">    
+              class="investigation-img thumbnail__image standard" id="6">    
             </div>
 
-            <div class="project">
-              <img src="img/play-investigation/investigation8tn.jpg" alt=""
-              class="investigation-img project__image" id="7">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation9tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="7">
             </div>
     
-            <div class="project">
-              <img src="img/play-investigation/investigation9tn.jpg" alt=""
-              class="investigation-img project__image" id="8">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation4tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="8">
             </div>
             
-            <div class="project">
-              <img src="img/play-investigation/investigation4tn.jpg" alt=""
-              class="investigation-img project__image" id="9">    
-            </div>
-    
-            <!-- POP-UP OVERLAY STUFF -->
-            <div class="overlay" id="qwer">      
-                <div class="overlay__inner" >
-                  <div class="flex-container">
-                    <!-- TODO: formatting stuff so arrows don't move around if images
-                    are of different size -->
-                    <a class="arrow-left" onclick="changeSlideNum(-1)">placeholder
-                    left arrow</a>
-    
-                    <div class="img-with-caption">
-                      <img class="expanded-img">
-                      <p>caption placeholder</p>
-                    </div>
-    
-                    <!-- TODO: replace with whatever arrow, just make sure to include onclick -->
-                    <a class="arrow-right" onclick="changeSlideNum(1)">placeholder
-                    right arrow</a>
-    
-                  </div>
-                </div>
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation8tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="9">    
             </div>
             
           </section>
@@ -123,30 +124,31 @@
       <!-- OLI -->
       <div class="shown play-display">
         <div id="oli">
-          <div class="oli-column">
-            <div class="img-div">
-              <img src="img/play-oli/oli3tn.jpg" alt="" class="oli-img">
+          <section id="oli-grid">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli3tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="10"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-oli/oli4tn.jpg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli5tn.jpeg" alt="doop"
+              class="oli-img thumbnail__image standard" id="11"> 
             </div>
-          </div>
-          <div class="oli-column">
-            <div class="img-div">
-              <img src="img/play-oli/oli5tn.jpeg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli7tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="12"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-oli/oli6tn.jpg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli4tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="13"> 
             </div>
-          </div>
-          <div class="oli-column">
-            <div class="img-div">
-              <img src="img/play-oli/oli7tn.jpg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli6tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="14"> 
             </div>
             <div id="oli-text" class=oli-column>
               <p>OLI</p>
             </div>
-          </div>
+          </section>
         </div>
       </div>
 
@@ -161,101 +163,127 @@
               <p>M I N D</p>
             </div>
           </div>
-          <div class="surreal-column">
-            <div class="img-div">
-              <img src="img/play-surreal/surreal1tn.jpg" alt="" class="surreal-img">
+          
+          <section id="surreal-grid">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal1tn.jpg" alt="meow"
+              class="surreal-img thumbnail__image standard" id="15"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal4tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal2tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="16"> 
             </div>
-          </div>
-          <div class="surreal-column">
-            <div class="img-div">
-              <img src="img/play-surreal/surreal2tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal3tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="17"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal5tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal4tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="18"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal7tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal5tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="19"> 
             </div>
-          </div>
-          <div class="surreal-column">
-            <div class="img-div">
-              <img src="img/play-surreal/surreal3tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal6tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="20"> 
+            </div class="hide">
+            <div>
+              
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal6tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal7tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="21"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal8tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal8tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="22"> 
             </div>
-          </div>
+          </section>
         </div>
       </div>
 
 
       <div class="play-display">
         <div id="procreate">
-          <img src="img/play-procreate/procreate19.jpg" alt="" id="procreate-top">
+          <!-- TODO: FIX -->
+          <div class="thumbnail procreate-top">
+            <img src="img/play-procreate/procreate19.jpg" alt=""
+            id="procreate-top 23" class="thumbnail__image"> 
+          </div>
+
           <div class="procreate">
-            <div class="procreate-column">
-              <div class="img-div">
-                <img src="img/play-procreate/procreate1tn.jpg" alt="" class="procreate-img">
+            <section id="procreate-grid">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate1tn.jpg" alt="bark"
+                class="procreate-img thumbnail__image standard" id="24"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate4tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate2tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="25"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate7tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate3tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="26"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate11tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate4tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="27"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate14tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate6.gif" alt=""
+                class="procreate-img thumbnail__image standard" id="28"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate17tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate5tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="29"> 
               </div>
-            </div>
-            <div class="procreate-column">
-              <div class="img-div">
-                <img src="img/play-procreate/procreate2tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate7tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="30"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate5tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate8tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="31"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate8tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate10tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="32"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate12tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate11tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="33"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate15tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate12tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="34"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate18tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate13tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="35"> 
               </div>
-            </div>
-            <div class="procreate-column">
-              <div class="img-div">
-                <img src="img/play-procreate/procreate3tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate14tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="36"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate6.gif" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate15tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="37"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate10tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate16tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="38"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate13tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate17tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="39"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate16tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate18.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="40"> 
               </div>
-            </div>
+            </section>
             <div id="procreate-text" class="procreate-column">
               <p>PROCREATE</p>
             </div>
