@@ -46,3 +46,55 @@ function playTab(elem) {
     document.getElementById('dsgn1').parentElement.classList.add('shown');
   }
 }
+
+
+
+let slideIndex = 1
+let slides = document.getElementsByClassName("project__image");
+
+function setSlideNum(n) {
+  slideIndex = n
+  showSlides(slideIndex)
+}
+
+function changeSlideNum(n) {
+  slideIndex += n
+  showSlides(slideIndex)
+}
+
+function showSlides(n) {
+  if (n > slides.length - 1) {slideIndex = 0}
+  if (n < 0) {slideIndex = slides.length - 1}
+  const overlayImage = document.querySelector('.overlay__inner img');
+  const overlayCaption = document.querySelector('.overlay__inner p');
+  overlayImage.src = slides[slideIndex].src
+  overlayCaption.innerHTML = slides[slideIndex].alt
+}
+
+function overlay() {
+  const buttons = document.querySelectorAll('.project');
+  const overlay = document.querySelector('.overlay');
+  const overlayImage = document.querySelector('.overlay__inner img');
+  const overlayCaption = document.querySelector('.overlay__inner p');
+
+  function open(e) {
+    overlay.classList.add('open');
+    const src = e.currentTarget.querySelector('img').src;
+    slideIndex = parseInt(e.currentTarget.querySelector('img').id - 1)
+    overlayCaption.innerHTML = e.currentTarget.querySelector('img').alt
+    overlayImage.src = src;
+  }
+  
+  function close() {
+    overlay.classList.remove('open');
+  }
+
+  buttons.forEach(button => button.addEventListener('click', open));
+
+  document.getElementById('qwer').addEventListener('click', function(e) {
+    e = window.event || e
+    if (this === e.target) {
+      close()
+    }
+  })
+}

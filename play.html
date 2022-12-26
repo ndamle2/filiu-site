@@ -5,6 +5,7 @@
     <title>Play</title>
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +30,7 @@
   </header>
 
 
-  <body id="play">
+  <body id="play" onload="overlay()">
     <div class="play-nav">
       <p class="play-nav-text"id="play-nav-text"><span id="fine" class="active" onclick="playTab(this)">FINE</span> / <span id="digital" onclick="playTab(this)">DIGITAL</span> /
         <span onclick="playTab(this)" id="multi">MULTI</span> / <span id="sketch" onclick="playTab(this)">SKETCH</span> /
@@ -37,46 +38,89 @@
         <span id="org" onclick="playTab(this)">ORG</span> / <span id="past" onclick="playTab(this)">PAST</span></p>
     </div>
     <div class="play-sections">
+      <!-- INVESTIGATION -->
       <div class="shown play-display">
+
         <div  id="investigation">
           <div id="investigation-text" class=investigation-column>
             <p>INVESTIGATION ON<br><b>BODILY ORFICES</b></p>
           </div>
-          <div class="investigation-column">
-            <div class="img-div">
-              <img src="img/play-investigation/investigation1tn.jpg" alt="" class="investigation-img">
+
+          <section id="portfolio">
+
+            <div class="project">
+              <img src="img/play-investigation/investigation1tn.jpg" alt="poopty
+              scoop"
+              class="investigation-img project__image" id="1"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation7tn.jpg" alt="" class="investigation-img">
+            
+            <div class="project">
+              <img src="img/play-investigation/investigation2tn.jpg" alt="222"
+              class="investigation-img project__image" id="2">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation9tn.jpg" alt="" class="investigation-img">
+            
+            <div class="project">
+              <img src="img/play-investigation/investigation6tn.jpg" alt=""
+              class="investigation-img project__image" id="3">
             </div>
-          </div>
-          <div class="investigation-column">
-            <div class="img-div">
-              <img src="img/play-investigation/investigation2tn.jpg" alt="" class="investigation-img">
+            
+            <div class="project">
+              <img src="img/play-investigation/investigation7tn.jpg" alt=""
+              class="investigation-img project__image" id="4">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation3tn.jpg" alt="" class="investigation-img">
+    
+            <div class="project">
+              <img src="img/play-investigation/investigation3tn.jpg" alt=""
+              class="investigation-img project__image" id="5">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation4tn.jpg" alt="" class="investigation-img">
+            
+            <div class="project">
+              <img src="img/play-investigation/investigation5tn.jpg" alt=""
+              class="investigation-img project__image" id="6">    
             </div>
-          </div>
-          <div class="investigation-column">
-            <div class="img-div">
-              <img src="img/play-investigation/investigation6tn.jpg" alt="" class="investigation-img">
+
+            <div class="project">
+              <img src="img/play-investigation/investigation8tn.jpg" alt=""
+              class="investigation-img project__image" id="7">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation5tn.jpg" alt="" class="investigation-img">
+    
+            <div class="project">
+              <img src="img/play-investigation/investigation9tn.jpg" alt=""
+              class="investigation-img project__image" id="8">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation8tn.jpg" alt="" class="investigation-img">
+            
+            <div class="project">
+              <img src="img/play-investigation/investigation4tn.jpg" alt=""
+              class="investigation-img project__image" id="9">    
             </div>
-          </div>
+    
+            <!-- POP-UP OVERLAY STUFF -->
+            <div class="overlay" id="qwer">      
+                <div class="overlay__inner" >
+                  <div class="flex-container">
+                    <!-- TODO: formatting stuff so arrows don't move around if images
+                    are of different size -->
+                    <a class="arrow-left" onclick="changeSlideNum(-1)">placeholder
+                    left arrow</a>
+    
+                    <div class="img-with-caption">
+                      <img class="expanded-img">
+                      <p>caption placeholder</p>
+                    </div>
+    
+                    <!-- TODO: replace with whatever arrow, just make sure to include onclick -->
+                    <a class="arrow-right" onclick="changeSlideNum(1)">placeholder
+                    right arrow</a>
+    
+                  </div>
+                </div>
+            </div>
+            
+          </section>
         </div>
       </div>
+
+      <!-- OLI -->
       <div class="shown play-display">
         <div id="oli">
           <div class="oli-column">
@@ -105,6 +149,8 @@
           </div>
         </div>
       </div>
+
+      <!-- SURREAL -->
       <div class="shown play-display">
         <div id="surreal">
           <div class="surreal-column">
@@ -147,6 +193,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="play-display">
         <div id="procreate">
           <img src="img/play-procreate/procreate19.jpg" alt="" id="procreate-top">
