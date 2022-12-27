@@ -1,0 +1,346 @@
+$body: 'Poppins', sans-serif;
+
+$white: #ffffff;
+$primary: #F2DAD7;
+$secondary: #D1A39E;
+$light: #CECDCA;
+$dark: #474545;
+$background: #F7F2E6;
+
+$ease: all 0.3s ease-in-out;
+
+body {
+  font-family: $body;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 250px 250px 250px;
+  grid-row-gap: 30px;
+  column-gap: 15vh;
+}
+
+#oli-grid {
+  margin-left: 50px;
+  width: 65%;
+  min-height: 40vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, .3fr));
+  grid-template-rows: 250px 250px;
+  // border: solid blue;
+  grid-row-gap: 30px;
+  column-gap: 30px;
+}
+
+#surreal-grid {
+  width: 75%;
+  min-height: 40vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 220px); 
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  // border: solid blue;
+  z-index: 2 !important;
+  grid-row-gap: 30px;
+  column-gap: 15vh;
+}
+
+#procreate-grid {
+  width: 75%;
+  min-height: 40vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(6, 220px);
+  // border: solid blue;
+  grid-row-gap: 30px;
+  column-gap: 15vh;
+}
+
+#multi-grid {
+  width: 60%;
+  min-height: 40vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 220px);
+  // border: solid blue;
+  grid-row-gap: 30px;
+  column-gap: 15px;
+}
+
+#nineteen-grid {
+  width: 60%;
+  min-height: 40vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(6, 250px);
+  // border: solid blue;
+  grid-row-gap: 8px;
+  column-gap: 15px;
+}
+
+#fifteen-grid {
+  width: 80%;
+  min-height: 40vh;
+  background: $background;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  grid-template-rows: repeat(5, 230px);
+  // border: solid blue;
+  grid-row-gap: 20px;
+  column-gap: 20vh;
+}
+
+.thumbnail {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  // border: solid red;
+  img {
+    // position: absolute;
+    font-size: 0;
+    // opacity: .9;    
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+  }
+  p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+  }
+  .grid__title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 0.8em;
+    z-index: 3;
+    text-transform: uppercase;
+    color: $dark;
+    letter-spacing: 2px;
+  }
+  .standard {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+// project hover overlay
+.thumbnail:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  background: rgba(darken($primary, 10%), .9);
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: $ease;
+  button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid $white;
+    color: $white;
+    text-transform: uppercase;
+    padding: 10px;
+    &:hover {
+      transition: $ease;
+      background: $white;
+      color: $secondary;
+      transform: scale(1.05);
+    }
+  }
+}
+
+//project popup overlay
+
+.overlay {
+  position: fixed;
+  background: rgba($dark, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow: visible;
+}
+
+.overlay__inner {
+  background: $white;
+  padding: 20px;
+  margin-top: 10vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 4;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: $dark;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.thumbnail__image {
+  // margin-left: -50%;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.arrow-right {
+  position: absolute;
+  height: 500px;
+  width: 120px;
+
+  // TODO: change
+  background-color: red;
+  margin: 30px;
+  z-index: 50;
+  left: 100%;
+  opacity: .7;
+}
+
+.arrow-right:hover {
+  // TODO: change
+  background-color: black;
+  cursor: pointer;
+
+}
+
+.arrow-left {
+  position: absolute;
+  height: 500px;
+  width: 120px;
+  background-color: red;
+  margin: 30px;
+  z-index: 50;
+  right: 100%;
+  opacity: .7;
+}
+
+.arrow-left:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+
+.flex-container {
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vh;
+  min-width: 100px;
+}
+
+.img-with-caption {
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: 100vh;
+}
+
+.expanded-img {
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+  z-index: -50 !important;
+}
+
+.procreate-top {
+  height: 170px !important;
+  width: 800px !important;
+  margin: 0px 20px 20px 20px;
+}
+
+.print {
+  height: 150px;
+  width: 115px;
+  margin: 10px;
+}
+
+.denotative-main-img {
+  // max-width: 330px;
+  width:100%;
+}
+
+.image-making-main {
+  margin: 30px 20px 0px 50px;
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.image-main-img {
+  width:100%;
+}
+
+.studio-top {
+  margin: 10px 20px 10px 0px;
+  max-width: 230px;
+}
+
+.studio {
+  width: 215;
+  margin: 10px 20px 10px 0px;
+}
+
+.stuff {
+  display: flex;
+  justify-content: start;
+}

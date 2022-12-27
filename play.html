@@ -5,6 +5,7 @@
     <title>Play</title>
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +30,7 @@
   </header>
 
 
-  <body id="play">
+  <body id="play" onload="overlay()">
     <div class="play-nav">
       <p class="play-nav-text"id="play-nav-text"><span id="fine" class="active" onclick="playTab(this)">FINE</span> / <span id="digital" onclick="playTab(this)">DIGITAL</span> /
         <span onclick="playTab(this)" id="multi">MULTI</span> / <span id="sketch" onclick="playTab(this)">SKETCH</span> /
@@ -37,74 +38,106 @@
         <span id="org" onclick="playTab(this)">ORG</span> / <span id="past" onclick="playTab(this)">PAST</span></p>
     </div>
     <div class="play-sections">
+
+      <!-- POP-UP OVERLAY STUFF -->
+      <div class="overlay" id="qwer">      
+        <div class="overlay__inner" >
+          <!-- TODO: change arrow -->
+          <a class="arrow-left" onclick="changeSlideNum(-1)">placeholder
+            left arrow</a>
+          <div class="flex-container">
+            <div class="img-with-caption">
+              <img class="expanded-img">
+              <p></p>
+            </div>
+          </div>
+          <!-- TODO: change -->
+          <a class="arrow-right" onclick="changeSlideNum(1)">placeholder
+            right arrow</a>
+        </div>
+      </div>
+
+      <!-- INVESTIGATION -->
       <div class="shown play-display">
+
         <div  id="investigation">
           <div id="investigation-text" class=investigation-column>
             <p>INVESTIGATION ON<br><b>BODILY ORFICES</b></p>
           </div>
-          <div class="investigation-column">
-            <div class="img-div">
-              <img src="img/play-investigation/investigation1tn.jpg" alt="" class="investigation-img">
+          <section id="portfolio">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation1tn.jpg" alt="poopty
+              scoop"
+              class="investigation-img thumbnail__image standard" id="1"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation7tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation2tn.jpg" alt="222"
+              class="investigation-img thumbnail__image standard" id="2">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation9tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation6tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="3">
             </div>
-          </div>
-          <div class="investigation-column">
-            <div class="img-div">
-              <img src="img/play-investigation/investigation2tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation7tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="4">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation3tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation3tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="5">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation4tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation5tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="6">    
             </div>
-          </div>
-          <div class="investigation-column">
-            <div class="img-div">
-              <img src="img/play-investigation/investigation6tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation9tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="7">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation5tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation4tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="8">
             </div>
-            <div class="img-div">
-              <img src="img/play-investigation/investigation8tn.jpg" alt="" class="investigation-img">
+            <div class="thumbnail">
+              <img src="img/play-investigation/investigation8tn.jpg" alt=""
+              class="investigation-img thumbnail__image standard" id="9">    
             </div>
-          </div>
+          </section>
         </div>
       </div>
+
+      <!-- OLI -->
       <div class="shown play-display">
         <div id="oli">
-          <div class="oli-column">
-            <div class="img-div">
-              <img src="img/play-oli/oli3tn.jpg" alt="" class="oli-img">
+          <section id="oli-grid">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli3tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="10"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-oli/oli4tn.jpg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli5tn.jpeg" alt="doop"
+              class="oli-img thumbnail__image standard" id="11"> 
             </div>
-          </div>
-          <div class="oli-column">
-            <div class="img-div">
-              <img src="img/play-oli/oli5tn.jpeg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli7tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="12"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-oli/oli6tn.jpg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli4tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="13"> 
             </div>
-          </div>
-          <div class="oli-column">
-            <div class="img-div">
-              <img src="img/play-oli/oli7tn.jpg" alt="" class="oli-img">
+            <div class="thumbnail">
+              <img src="img/play-oli/oli6tn.jpg" alt="doop"
+              class="oli-img thumbnail__image standard" id="14"> 
             </div>
             <div id="oli-text" class=oli-column>
               <p>OLI</p>
             </div>
-          </div>
+          </section>
         </div>
       </div>
+
+      <!-- SURREAL -->
       <div class="shown play-display">
         <div id="surreal">
           <div class="surreal-column">
@@ -115,258 +148,284 @@
               <p>M I N D</p>
             </div>
           </div>
-          <div class="surreal-column">
-            <div class="img-div">
-              <img src="img/play-surreal/surreal1tn.jpg" alt="" class="surreal-img">
+          
+          <section id="surreal-grid">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal1tn.jpg" alt="meow"
+              class="surreal-img thumbnail__image standard" id="15"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal4tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal2tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="16"> 
             </div>
-          </div>
-          <div class="surreal-column">
-            <div class="img-div">
-              <img src="img/play-surreal/surreal2tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal3tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="17"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal5tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal4tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="18"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal7tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal5tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="19"> 
             </div>
-          </div>
-          <div class="surreal-column">
-            <div class="img-div">
-              <img src="img/play-surreal/surreal3tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal6tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="20"> 
+            </div class="hide">
+            <div>
+              
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal6tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal7tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="21"> 
             </div>
-            <div class="img-div">
-              <img src="img/play-surreal/surreal8tn.jpg" alt="" class="surreal-img">
+            <div class="thumbnail">
+              <img src="img/play-surreal/surreal8tn.jpg" alt=""
+              class="surreal-img thumbnail__image standard" id="22"> 
             </div>
-          </div>
+          </section>
         </div>
       </div>
+
+      <!-- PROCREATE -->
       <div class="play-display">
         <div id="procreate">
-          <img src="img/play-procreate/procreate19.jpg" alt="" id="procreate-top">
+          <div class="thumbnail procreate-top">
+            <img src="img/play-procreate/procreate19.jpg" alt=""
+            id="23" class="thumbnail__image"> 
+          </div>
+
           <div class="procreate">
-            <div class="procreate-column">
-              <div class="img-div">
-                <img src="img/play-procreate/procreate1tn.jpg" alt="" class="procreate-img">
+            <section id="procreate-grid">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate1tn.jpg" alt="bark"
+                class="procreate-img thumbnail__image standard" id="24"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate4tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate2tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="25"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate7tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate3tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="26"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate11tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate4tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="27"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate14tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate6.gif" alt=""
+                class="procreate-img thumbnail__image standard" id="28"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate17tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate5tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="29"> 
               </div>
-            </div>
-            <div class="procreate-column">
-              <div class="img-div">
-                <img src="img/play-procreate/procreate2tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate7tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="30"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate5tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate8tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="31"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate8tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate10tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="32"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate12tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate11tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="33"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate15tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate12tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="34"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate18tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate13tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="35"> 
               </div>
-            </div>
-            <div class="procreate-column">
-              <div class="img-div">
-                <img src="img/play-procreate/procreate3tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate14tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="36"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate6.gif" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate15tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="37"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate10tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate16tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="38"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate13tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate17tn.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="39"> 
               </div>
-              <div class="img-div">
-                <img src="img/play-procreate/procreate16tn.jpg" alt="" class="procreate-img">
+              <div class="thumbnail">
+                <img src="img/play-procreate/procreate18.jpg" alt=""
+                class="procreate-img thumbnail__image standard" id="40"> 
               </div>
-            </div>
+            </section>
             <div id="procreate-text" class="procreate-column">
               <p>PROCREATE</p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- MULTIMEDIA -->
       <div class="play-display">
         <div id="multimedia">
-          <div class="multimedia-column">
-            <div class="img-div">
-              <img src="img/play-multi/multi1tn.jpg" alt="" class="multi-img">
+
+          <section id="multi-grid">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi1tn.jpg" alt="" class="multi-img thumbnail__image standard" id="41">
             </div>
-            <div class="img-div">
-              <img src="img/play-multi/multi5tn.jpg" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi2tn.jpg" alt="" class="multi-img thumbnail__image standard" id="42">
             </div>
-            <div class="img-div">
-              <img src="img/play-multi/multi8tn.jpg" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi3tn.jpg" alt="" class="multi-img thumbnail__image standard" id="43">
             </div>
-          </div>
-          <div class="multimedia-column">
-            <div class="img-div">
-              <img src="img/play-multi/multi2tn.jpg" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi5tn.jpg" alt="" class="multi-img thumbnail__image standard" id="44">
             </div>
-            <div class="img-div">
-              <img src="img/play-multi/multi6tn.jpg" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi6tn.jpg" alt="" class="multi-img thumbnail__image standard" id="45">
             </div>
-            <div class="img-div">
-              <img src="img/play-multi/multi9tn.JPG" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi1tn.jpg" alt="" class="multi-img thumbnail__image standard" id="46">
             </div>
-          </div>
-          <div class="multimedia-column">
-            <div class="img-div">
-              <img src="img/play-multi/multi3tn.jpg" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi8tn.jpg" alt="" class="multi-img thumbnail__image standard" id="47">
             </div>
-            <div class="img-div">
-              <img src="img/play-multi/multi1tn.jpg" alt="" class="multi-img">
+            <div class="thumbnail">
+              <img src="img/play-multi/multi9tn.jpg" alt="" class="multi-img thumbnail__image standard" id="48">
             </div>
-          </div>
+          </section>
         </div>
         <div id="multi-text">
           <p><b>MULTI</b>MEDIA</p>
         </div>
       </div>
+
+      <!-- NINETEEN -->
       <div class="play-display">
         <div class="nineteen" id="2019">
-          <div class="nineteen-column">
-            <div class="img-div">
-              <img src="img/play-sketches/2019/1tn.jpg" alt="" class="nineteen-img">
+          <section id="nineteen-grid">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/1tn.jpg" alt="" class="thumbnail__image standard" id="49">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/4tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/2tn.jpg" alt="" class="thumbnail__image standard" id="50">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/7tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/3tn.jpg" alt="" class="thumbnail__image standard" id="51">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/10tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/4tn.jpg" alt="" class="thumbnail__image standard" id="52">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/13tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/5tn.jpg" alt="" class="thumbnail__image standard" id="53">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/16tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/6tn.jpg" alt="" class="thumbnail__image standard" id="54">
             </div>
-          </div>
-          <div class="nineteen-column">
-            <div class="img-div">
-              <img src="img/play-sketches/2019/2tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/7tn.jpg" alt="" class="thumbnail__image standard" id="55">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/5tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/8tn.jpg" alt="" class="thumbnail__image standard" id="56">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/8tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/9tn.jpg" alt="" class="thumbnail__image standard" id="57">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/11tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/10tn.jpg" alt="" class="thumbnail__image standard" id="58">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/14tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/11tn.jpg" alt="" class="thumbnail__image standard" id="59">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/17tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/12tn.jpg" alt="" class="thumbnail__image standard" id="60">
             </div>
-          </div>
-          <div class="nineteen-column">
-            <div class="img-div">
-              <img src="img/play-sketches/2019/3tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/13tn.jpg" alt="" class="thumbnail__image standard" id="61">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/6tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/14tn.jpg" alt="" class="thumbnail__image standard" id="62">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/9tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/15tn.jpg" alt="" class="thumbnail__image standard" id="63">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/12tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/16tn.jpg" alt="" class="thumbnail__image standard" id="64">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2019/15tn.jpg" alt="" class="nineteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2019/17tn.jpg" alt="" class="thumbnail__image standard" id="65">
             </div>
             <div id="nineteen-text">
               <p>2019 -</p>
             </div>
-          </div>
+          </section>
         </div>
       </div>
+
+      <!-- FIFTEEN -->
       <div class="play-display">
         <div class="fifteen" id="2015">
           <div class="fifteen-text">
             <p>2015-2018</p>
           </div>
-          <div class="fifteen-column">
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/1tn.jpg" alt="" class="fifteen-img">
+          <section id="fifteen-grid">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/1tn.jpg" alt="" class="thumbnail__image standard" id="66">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/4tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/2tn.jpg" alt="" class="thumbnail__image standard" id="67">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/7tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/3tn.jpg" alt="" class="thumbnail__image standard" id="68">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/10tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/4tn.jpg" alt="" class="thumbnail__image standard" id="69">
             </div>
-          </div>
-          <div class="fifteen-column">
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/2tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/5tn.jpg" alt="" class="thumbnail__image standard" id="70">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/5tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/6tn.jpg" alt="" class="thumbnail__image standard" id="71">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/8tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/7tn.jpg" alt="" class="thumbnail__image standard" id="72">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/11tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/8tn.jpg" alt="" class="thumbnail__image standard" id="73">
             </div>
-          </div>
-          <div class="fifteen-column">
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/3tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/9tn.jpg" alt="" class="thumbnail__image standard" id="74">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/6tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/10tn.jpg" alt="" class="thumbnail__image standard" id="75">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/9tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/11tn.jpg" alt="" class="thumbnail__image standard" id="76">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/12tn.jpg" alt="" class="fifteen-img">
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/12tn.jpg" alt="" class="thumbnail__image standard" id="77">
             </div>
-            <div class="img-div">
-              <img src="img/play-sketches/2015-2018/13tn.jpg" alt="" class="fifteen-img">
+            <div></div>
+            <div></div>
+            <div class="thumbnail">
+              <img src="img/play-sketches/2015-2018/13tn.jpg" alt="" class="thumbnail__image standard" id="78">
             </div>
-          </div>
+          </section>
         </div>
       </div>
+
+      <!-- DIGITAL -->
       <div class="play-display">
         <div id="digi">
           <p>DIGI</p>
@@ -383,218 +442,450 @@
             <p><b>VIS 41</b> DESIGN COMMUNICATION</p>
             <p><b>CONNOTATIVE PRINT</b></p>
           </div>
+
+          <!-- TODO: fix sizes of top row stuff -->
           <div class="connotative">
             <div class="connotative-column" >
               <div class="connotative-row1">
-                <img src="img/play-vis41/play-display/connotative1.png" alt="">
-                <img src="img/play-vis41/play-display/connotative2.png" alt="">
+                <div class="thumbnail">
+                  <img src="img/play-vis41/play-display/connotative1.png" alt=""
+                  class="thumbnail__image" id="79">
+                </div>
+                <div class="thumbnail">
+                  <img src="img/play-vis41/play-display/connotative2.png"
+                  class="thumbnail__image" alt="" id="80">
+                </div>
               </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/V2connotative1.png" alt="">
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/V2connotative1.png" alt=""
+                class="thumbnail__image" id="81">
               </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/connotative3.png" alt="">
-              </div>
-            </div>
-            <div class="connotative-column">
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/connotative-font1.png" alt="">
-              </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/connotative4.png" alt="">
-              </div>
-            </div>
-            <div class="connotative-column">
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/c-font1.png" alt="">
-              </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/c-font2.png" alt="">
-              </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/c-font3.png" alt="">
-              </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/c-font4.png" alt="">
-              </div>
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/V3connotative1.png" alt="">
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/connotative3.png" alt=""
+                class="thumbnail__image" id="82">
               </div>
             </div>
             <div class="connotative-column">
-              <div class="connotative-div">
-                <img src="img/play-vis41/play-display/connotative-final.png" alt="">
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/connotative-font1.png"
+                alt="" class="thumbnail__image" id="83">
+              </div>
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/connotative4.png" alt=""
+                class="thumbnail__image" id="84">
+              </div>
+            </div>
+            <div class="connotative-column">
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/c-font1.png" alt="" class="thumbnail__image" id="85">
+              </div>
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/c-font2.png" alt="" class="thumbnail__image" id="86">
+              </div>
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/c-font3.png" alt="" class="thumbnail__image" id="87">
+              </div>
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/c-font4.png" alt="" class="thumbnail__image" id="88">
+              </div>
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/V3connotative1.png" alt=""
+                class="thumbnail__image" id="89">
+              </div>
+            </div>
+            <div class="connotative-column">
+              <div class="thumbnail connotative-div">
+                <img src="img/play-vis41/play-display/connotative-final.png"
+                alt="" class="thumbnail__image" id="90">
               </div>
             </div>
           </div>
           <div class="denotative-title" id="vis41-title">
             <p><b>DENOTATIVE PRINT</b></p>
           </div>
+
           <div class="denotative">
             <div class="denotative-top">
               <div class="denotative-top-rows">
-                <div class="d-row1">
-                  <img src="img/play-vis41/dps1/v1.png" alt="">
-                  <img src="img/play-vis41/dps1/v2.png" alt="">
-                  <img src="img/play-vis41/dps1/v3.png" alt="">
-                  <img src="img/play-vis41/dps1/v4.png" alt="">
-                  <img src="img/play-vis41/dps1/v5.png" alt="">
+                <div class="d-row">
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v1.png" alt=""
+                    class="thumbnail__image" id="91">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v2.png" alt="" class="thumbnail__image" id="92">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v3.png" alt="" class="thumbnail__image" id="93">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v4.png" alt="" class="thumbnail__image" id="94">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v5.png" alt="" class="thumbnail__image" id="95">
+                  </div>
                 </div>
-                <div class="d-row2">
-                  <img src="img/play-vis41/dps1/v6.png" alt="">
-                  <img src="img/play-vis41/dps1/v7.png" alt="">
+                <div class="d-row">
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v6.png" alt="" class="thumbnail__image" id="96">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps1/v7.png" alt="" class="thumbnail__image" id="97">
+                  </div>
                 </div>
-                <div class="d-row3">
-                  <img src="img/play-vis41/dps2/v1.png" alt="">
-                  <img src="img/play-vis41/dps2/v2.png" alt="">
-                  <img src="img/play-vis41/dps2/v3.png" alt="">
-                  <img src="img/play-vis41/dps2/v4.png" alt="">
-                  <img src="img/play-vis41/dps2/v5.png" alt="">
+                <div class="d-row">
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps2/v1.png" alt="" class="thumbnail__image" id="98">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps2/v2.png" alt=""
+                    class="thumbnail__image" id="99">
+                    </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps2/v3.png" alt="" class="thumbnail__image" id="100">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps2/v4.png" alt="" class="thumbnail__image" id="101">
+                  </div>
+                  <div class="thumbnail print">
+                    <img src="img/play-vis41/dps2/v5.png" alt="" class="thumbnail__image" id="102">
+                  </div>
                 </div>
               </div>
-              <div class="denotative-main">
-                <img src="img/play-vis41/denotative-main.png" alt="" id="denotative-main">
+              <div class="denotative-main thumbnail">
+                  <img src="img/play-vis41/denotative-main.png" alt=""
+                  id="103" class="thumbnail__image denotative-main-img">
               </div>
             </div>
             <div class="denotative-bottom">
-              <div class="d-row4">
-                <img src="img/play-vis41/dps2/v6.png" alt="">
-                <img src="img/play-vis41/dps2/v7.png" alt="">
-                <img src="img/play-vis41/dps2/v8.png" alt="">
-                <img src="img/play-vis41/dps2/v9.png" alt="">
-                <img src="img/play-vis41/dps2/v10.png" alt="">
-                <img src="img/play-vis41/dps2/v11.png" alt="">
+              <div class="d-row">
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps2/v6.png" alt="" class="thumbnail__image" id="104">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps2/v7.png" alt="" class="thumbnail__image" id="105">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps2/v8.png" alt="" class="thumbnail__image" id="106">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps2/v9.png" alt="" class="thumbnail__image" id="107">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps2/v10.png" alt="" class="thumbnail__image" id="108">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps2/v11.png" alt="" class="thumbnail__image" id="109">
+                </div>
               </div>
-              <div class="d-row5">
-                <img src="img/play-vis41/dps3/v1.png" alt="">
-                <img src="img/play-vis41/dps3/v2.png" alt="">
-                <img src="img/play-vis41/dps3/v3.png" alt="">
-                <img src="img/play-vis41/dps3/v4.png" alt="">
-                <img src="img/play-vis41/dps3/v5.png" alt="">
-                <img src="img/play-vis41/dps3/v6.png" alt="">
-                <img src="img/play-vis41/dps3/v7.png" alt="">
-                <img src="img/play-vis41/dps3/v8.png" alt="">
+              <div class="d-row">
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v1.png" alt="" class="thumbnail__image" id="110">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v2.png" alt="" class="thumbnail__image" id="111">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v3.png" alt="" class="thumbnail__image" id="112">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v4.png" alt="" class="thumbnail__image" id="113">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v5.png" alt="" class="thumbnail__image" id="114">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v6.png" alt="" class="thumbnail__image" id="115">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v7.png" alt="" class="thumbnail__image" id="116">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/dps3/v8.png" alt="" class="thumbnail__image" id="117">
+                </div>
               </div>
             </div>
           </div>
+
           <div class="image-title" id="vis41-title">
             <p><b>IMAGE MAKING</b></p>
           </div>
           <div class="image-top">
             <div class="image-top-rows">
-              <div class="i-row1">
-                <img src="img/play-vis41/imps1/img1.png" alt="">
-                <img src="img/play-vis41/imps2/img2.png" alt="">
-                <img src="img/play-vis41/imps2/img3.png" alt="">
-                <img src="img/play-vis41/imps2/img1.png" alt="">
+              <div class="i-row">
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img1.png" alt="" class="thumbnail__image" id="118">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps2/img2.png" alt="" class="thumbnail__image" id="119">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps2/img3.png" alt="" class="thumbnail__image" id="120">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps2/img1.png" alt="" class="thumbnail__image" id="121">
+                </div>
               </div>
-              <div class="i-row2">
-                <img src="img/play-vis41/imps1/img6.png" alt="">
-                <img src="img/play-vis41/imps2/img7.png" alt="">
-                <img src="img/play-vis41/imps1/img3.png" alt="">
-                <img src="img/play-vis41/imps1/img11.png" alt="">
+              <div class="i-row">
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img6.png" alt="" class="thumbnail__image" id="122">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps2/img7.png" alt="" class="thumbnail__image" id="123">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img3.png" alt="" class="thumbnail__image" id="124">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img11.png" alt="" class="thumbnail__image" id="125">
+                </div>
               </div>
-              <div class="i-row3">
-                <img src="img/play-vis41/imps1/img2.png" alt="">
-                <img src="img/play-vis41/imps1/img4.png" alt="">
-                <img src="img/play-vis41/imps2/img8.png" alt="">
-                <img src="img/play-vis41/imps2/img9.png" alt="">
-                <img src="img/play-vis41/imps1/img5.png" alt="">
+              <div class="i-row">
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img2.png" alt="" class="thumbnail__image" id="126">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img4.png" alt="" class="thumbnail__image" id="127">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps2/img8.png" alt="" class="thumbnail__image" id="128">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps2/img9.png" alt="" class="thumbnail__image" id="129">
+                </div>
+                <div class="thumbnail print">
+                  <img src="img/play-vis41/imps1/img5.png" alt="" class="thumbnail__image" id="130">
+                </div>
               </div>
             </div>
-            <div class="image-making-main">
-              <img src="img/play-vis41/final-image.png" alt="" id="image-making-main">
+            <div class="thumbnail image-making-main">
+              <img src="img/play-vis41/final-image.png" alt=""
+              id="131" class="thumbnail__image image-main-img">
             </div>
           </div>
           <div class="image-bottom">
-            <div class="i-row4">
-              <img src="img/play-vis41/imps1/img9.png" alt="">
-              <img src="img/play-vis41/imps2/img11.png" alt="">
-              <img src="img/play-vis41/imps2/img12.png" alt="">
-              <img src="img/play-vis41/imps2/img15.png" alt="">
-              <img src="img/play-vis41/imps2/img14.png" alt="">
-              <img src="img/play-vis41/imps1/img12.png" alt="">
-              <img src="img/play-vis41/imps1/img13.png" alt="">
-              <img src="img/play-vis41/imps1/img14.png" alt="">
+            <div class="i-row">
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps1/img9.png" alt="" class="thumbnail__image" id="132">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps2/img11.png" alt="" class="thumbnail__image" id="133">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps2/img12.png" alt="" class="thumbnail__image" id="134">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps2/img15.png" alt="" class="thumbnail__image" id="135">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps2/img14.png" alt="" class="thumbnail__image" id="136">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps1/img12.png" alt="" class="thumbnail__image" id="137">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps1/img13.png" alt="" class="thumbnail__image" id="138">
+              </div>
+              <div class="thumbnail print">
+                <img src="img/play-vis41/imps1/img14.png" alt="" class="thumbnail__image" id="139">
+              </div>
             </div>
             <div class="i-row5">
-              <img src="img/play-vis41/imps1/img15.png" alt="">
-              <img src="img/play-vis41/imps1/img16.png" alt="">
-              <img src="img/play-vis41/imps1/img17.png" alt="">
+              <div class="thumbnail">
+                <img src="img/play-vis41/imps1/img15.png" alt="" class="thumbnail__image" id="140">
+              </div>
+              <div class="thumbnail">
+                <img src="img/play-vis41/imps1/img16.png" alt="" class="thumbnail__image" id="141">
+              </div>
+              <div class="thumbnail">
+                <img src="img/play-vis41/imps1/img17.png" alt=""
+                class="thumbnail__image" id="142">
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- VIS 80 -->
       <div class="play-display" >
         <div id="vis80">
           <p><b>VIS 80</b> INTRO TO STUDIO</p>
           <div class="top-row">
-            <img src="img/play-vis80/img1.png" alt="">
-            <img src="img/play-vis80/img2.png" alt="">
-            <img src="img/play-vis80/img3.png" alt="" id="horizontal">
-            <img src="img/play-vis80/img4.png" alt="">
-            <img src="img/play-vis80/img5.png" alt="">
+            <div class="thumbnail studio-top">
+            <img src="img/play-vis80/img1.png" alt="" class="thumbnail__image" id="143">
+            </div>
+            <div class="thumbnail studio-top">
+            <img src="img/play-vis80/img2.png" alt="" class="thumbnail__image" id="144">
+            </div>
+            <div class="thumbnail studio-top" id="horizontal">
+            <img src="img/play-vis80/img3.png" alt="" class="thumbnail__image" id="145">
+            </div>
+            <div class="thumbnail studio-top">
+            <img src="img/play-vis80/img4.png" alt="" class="thumbnail__image" id="146">
+            </div>
+            <div class="thumbnail studio-top">
+            <img src="img/play-vis80/img5.png" alt="" class="thumbnail__image" id="147">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/img6.png" alt="">
-            <img src="img/play-vis80/img7.png" alt="">
-            <img src="img/play-vis80/img8.png" alt="">
-            <img src="img/play-vis80/img9.png" alt="">
-            <img src="img/play-vis80/img10.png" alt="">
-            <img src="img/play-vis80/img11.png" alt="">
+            <div class="thumbnail studio">
+              <img src="img/play-vis80/img6.png" alt="" class="thumbnail__image"
+              id="148">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/img7.png" alt="" class="thumbnail__image"
+            id="149">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/img8.png" alt="" class="thumbnail__image"
+            id="150">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/img9.png" alt="" class="thumbnail__image"
+            id="151">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/img10.png" alt="" class="thumbnail__image"
+            id="152">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/img11.png" alt="" class="thumbnail__image"
+            id="153">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 1-1.png" alt="">
-            <img src="img/play-vis80/SET 1-2.png" alt="">
-            <img src="img/play-vis80/SET 1-3.png" alt="">
-            <img src="img/play-vis80/SET 1-4.png" alt="">
-            <img src="img/play-vis80/SET 1-5.png" alt="">
-            <img src="img/play-vis80/SET 2-1.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 1-1.png" alt="" class="thumbnail__image" id="154">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 1-2.png" alt="" class="thumbnail__image" id="155">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 1-3.png" alt="" class="thumbnail__image" id="156">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 1-4.png" alt="" class="thumbnail__image" id="157">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 1-5.png" alt="" class="thumbnail__image" id="158">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 2-1.png" alt="" class="thumbnail__image" id="159">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 2-2.png" alt="">
-            <img src="img/play-vis80/SET 2-3.png" alt="">
-            <img src="img/play-vis80/SET 2-4.png" alt="">
-            <img src="img/play-vis80/SET 3-1.png" alt="">
-            <img src="img/play-vis80/SET 3-2.png" alt="">
-            <img src="img/play-vis80/SET 3-3.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 2-2.png" alt="" class="thumbnail__image" id="160">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 2-3.png" alt="" class="thumbnail__image" id="161">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 2-4.png" alt="" class="thumbnail__image" id="162">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 3-1.png" alt="" class="thumbnail__image" id="163">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 3-2.png" alt="" class="thumbnail__image" id="164">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 3-3.png" alt="" class="thumbnail__image" id="165">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 3-4.png" alt="">
-            <img src="img/play-vis80/SET 3-5.png" alt="">
-            <img src="img/play-vis80/SET 4-1.png" alt="">
-            <img src="img/play-vis80/SET 4-2.png" alt="">
-            <img src="img/play-vis80/SET 4-3.png" alt="">
-            <img src="img/play-vis80/SET 4-4.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 3-4.png" alt="" class="thumbnail__image" id="166">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 3-5.png" alt="" class="thumbnail__image" id="167">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 4-1.png" alt="" class="thumbnail__image" id="168">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 4-2.png" alt="" class="thumbnail__image" id="169">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 4-3.png" alt="" class="thumbnail__image" id="170">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 4-4.png" alt="" class="thumbnail__image" id="171">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 4-5.png" alt="">
-            <img src="img/play-vis80/SET 5-1.png" alt="">
-            <img src="img/play-vis80/SET 5-2.png" alt="">
-            <img src="img/play-vis80/SET 5-3.png" alt="">
-            <img src="img/play-vis80/SET 5-4.png" alt="">
-            <img src="img/play-vis80/SET 5-5.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 4-5.png" alt="" class="thumbnail__image" id="172">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 5-1.png" alt="" class="thumbnail__image" id="173">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 5-2.png" alt="" class="thumbnail__image" id="174">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 5-3.png" alt="" class="thumbnail__image" id="175">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 5-4.png" alt="" class="thumbnail__image" id="176">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 5-5.png" alt="" class="thumbnail__image" id="177">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 6-5.png" alt="">
-            <img src="img/play-vis80/SET 6-1.png" alt="">
-            <img src="img/play-vis80/SET 6-2.png" alt="">
-            <img src="img/play-vis80/SET 6-3.png" alt="">
-            <img src="img/play-vis80/SET 6-4.png" alt="">
-            <img src="img/play-vis80/SET 7-1.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 6-5.png" alt="" class="thumbnail__image" id="178">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 6-1.png" alt="" class="thumbnail__image" id="179">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 6-2.png" alt="" class="thumbnail__image" id="180">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 6-3.png" alt="" class="thumbnail__image" id="181">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 6-4.png" alt="" class="thumbnail__image" id="182">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 7-1.png" alt="" class="thumbnail__image" id="183">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 7-2.png" alt="">
-            <img src="img/play-vis80/SET 7-3.png" alt="">
-            <img src="img/play-vis80/SET 7-4.png" alt="">
-            <img src="img/play-vis80/SET 7-5.png" alt="">
-            <img src="img/play-vis80/SET 8-1.png" alt="">
-            <img src="img/play-vis80/SET 8-2.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 7-2.png" alt="" class="thumbnail__image" id="184">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 7-3.png" alt="" class="thumbnail__image" id="185">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 7-4.png" alt="" class="thumbnail__image" id="186">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 7-5.png" alt="" class="thumbnail__image" id="187">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 8-1.png" alt="" class="thumbnail__image" id="188">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 8-2.png" alt="" class="thumbnail__image" id="189">
+            </div>
           </div>
           <div class="row">
-            <img src="img/play-vis80/SET 8-3.png" alt="">
-            <img src="img/play-vis80/SET 8-4.png" alt="">
-            <img src="img/play-vis80/SET 8-5.png" alt="">
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 8-3.png" alt="" class="thumbnail__image" id="190">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 8-4.png" alt="" class="thumbnail__image" id="191">
+            </div>
+            <div class="thumbnail studio">
+            <img src="img/play-vis80/SET 8-5.png" alt="" class="thumbnail__image" id="192">
+            </div>
+            <div class="studio"></div>
+            <div class="studio"></div>
+            <div class="studio"></div>
           </div>
         </div>
       </div>

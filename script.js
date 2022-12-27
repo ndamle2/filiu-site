@@ -1,3 +1,16 @@
+const INVESTIGATION_INDEX = 0
+const OLI_INDEX = 9
+const SURREAL_INDEX = 14
+const PROCREATE_INDEX = 22
+const MULTIMEDIA_INDEX = 40
+const YEAR2019_INDEX = 48
+const YEAR2015_INDEX = 65
+const CONNOTATIVE_INDEX = 78
+const DENOTATIVE_INDEX = 90
+const IMAGE_INDEX = 117
+const INTRO_INDEX = 142
+const indices = [INVESTIGATION_INDEX, OLI_INDEX, SURREAL_INDEX, PROCREATE_INDEX, MULTIMEDIA_INDEX, YEAR2019_INDEX, YEAR2015_INDEX, CONNOTATIVE_INDEX, DENOTATIVE_INDEX, IMAGE_INDEX, INTRO_INDEX, 192]
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -45,4 +58,79 @@ function playTab(elem) {
     document.getElementById('vis80').parentElement.classList.add('shown');
     document.getElementById('dsgn1').parentElement.classList.add('shown');
   }
+}
+
+
+
+let slideIndex = 0
+let slides = document.getElementsByClassName("thumbnail__image");
+
+function changeSlideNum(n) {
+  if (n == 1) {
+    let asdf = indices.indexOf(slideIndex + 1)
+
+    if (asdf >= 0) {
+      slideIndex = indices[asdf - 1]
+    } else {
+      slideIndex += 1
+    }
+  } else if (n == -1) {
+    let asdf = indices.indexOf(slideIndex)
+
+    if (asdf >= 0) {
+      slideIndex = indices[asdf + 1] - 1
+    } else {
+      slideIndex -= 1
+    }
+  }
+  showSlides(slideIndex)
+}
+
+function showSlides(n) {
+  console.log(slideIndex)
+  const overlayImage = document.querySelector('.overlay__inner img');
+  const overlayCaption = document.querySelector('.overlay__inner p');
+  overlayImage.src = slides[slideIndex].src
+  overlayCaption.innerHTML = slides[slideIndex].alt
+}
+
+function overlay() {
+  // let investigationSlides = document.querySelectorAll('#investigation img')
+  // let oliSlides = document.querySelectorAll('#oli img')
+  // let surrealSlides = document.querySelectorAll('#surreal img')
+  // let procreateSlides = document.querySelectorAll('#procreate img')
+  // let multimediaSlides = document.querySelectorAll('#multimedia img')
+  // let nineteenSlides = document.querySelectorAll('div.nineteen img')
+  // let fifteenSlides = document.querySelectorAll('.fifteen img')
+  // let vis41Slides = document.querySelectorAll('#vis41 img')
+  // let introSlides = document.querySelectorAll('#vis80 img')
+
+  // let slides = [investigationSlides, oliSlides, surrealSlides, procreateSlides, multimediaSlides, nineteenSlides, fifteenSlides, vis41Slides, introSlides]
+  
+  const buttons = document.querySelectorAll('.thumbnail');
+  const overlay = document.querySelector('.overlay');
+  const overlayImage = document.querySelector('.overlay__inner img');
+  const overlayCaption = document.querySelector('.overlay__inner p');
+
+  function open(e) {
+    console.log(slideIndex)
+    overlay.classList.add('open');
+    const src = e.currentTarget.querySelector('img').src;
+    slideIndex = parseInt(e.currentTarget.querySelector('img').id - 1)
+    overlayCaption.innerHTML = e.currentTarget.querySelector('img').alt
+    overlayImage.src = src;
+  }
+  
+  function close() {
+    overlay.classList.remove('open');
+  }
+
+  buttons.forEach(button => button.addEventListener('click', open));
+
+  document.getElementById('qwer').addEventListener('click', function(e) {
+    e = window.event || e
+    if (this === e.target) {
+      close()
+    }
+  })
 }
