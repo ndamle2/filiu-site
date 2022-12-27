@@ -92,7 +92,8 @@ function thumbnailToOriginal(thumbnail) {
     return thumbnail
   }
   const imgPos = thumbnail.indexOf('/img')
-  return thumbnail.slice(imgPos, tnPos) + '.jpg'
+  return asdf;
+  // return thumbnail.slice(0, tnPos) + '.jpg'
 }
 
 function showSlides(n) {
