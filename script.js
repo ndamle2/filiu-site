@@ -86,11 +86,19 @@ function changeSlideNum(n) {
   showSlides(slideIndex)
 }
 
+function thumbnailToOriginal(thumbnail) {
+  const tnPos = thumbnail.indexOf('tn.')
+  if (tnPos < 0) {
+    return thumbnail
+  }
+  const imgPos = thumbnail.indexOf('/img')
+  return thumbnail.slice(0, tnPos) + '.jpg'
+}
+
 function showSlides(n) {
-  console.log(slideIndex)
   const overlayImage = document.querySelector('.overlay__inner img');
   const overlayCaption = document.querySelector('.overlay__inner p');
-  overlayImage.src = slides[slideIndex].src
+  overlayImage.src = thumbnailToOriginal(slides[slideIndex].src)
   overlayCaption.innerHTML = slides[slideIndex].alt
 }
 
@@ -113,15 +121,15 @@ function overlay() {
   const overlayCaption = document.querySelector('.overlay__inner p');
 
   function open(e) {
-    console.log(slideIndex)
     overlay.classList.add('open');
     const src = e.currentTarget.querySelector('img').src;
     slideIndex = parseInt(e.currentTarget.querySelector('img').id - 1)
     overlayCaption.innerHTML = e.currentTarget.querySelector('img').alt
-    overlayImage.src = src;
+    overlayImage.src = thumbnailToOriginal(src);
   }
   
   function close() {
+    overlayImage.src = ''
     overlay.classList.remove('open');
   }
 
