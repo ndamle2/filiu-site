@@ -9,16 +9,20 @@ button {
 
 #portfolio {
   width: 100%;
+  padding: 20px;
   min-height: 100vh;
   background: #F7F2E6;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(3, minmax(200px, 0.3fr));
   grid-template-rows: 250px 250px 250px;
-  grid-row-gap: 30px;
-  -moz-column-gap: 15vh;
-       column-gap: 15vh;
+  grid-row-gap: 10px;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
+
 }
+
+
 
 #oli-grid {
   margin-left: 50px;
@@ -27,15 +31,16 @@ button {
   background: #F7F2E6;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 0.3fr));
+  grid-template-columns: repeat(3, minmax(200px, 0.4fr));
   grid-template-rows: 250px 250px;
-  grid-row-gap: 30px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  grid-row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 #surreal-grid {
-  width: 75%;
+  padding: 10px;
+  width: 63%;
   min-height: 40vh;
   background: #F7F2E6;
   position: relative;
@@ -44,23 +49,24 @@ button {
   grid-template-rows: repeat(3, 220px);
   justify-content: space-evenly;
   align-content: space-evenly;
-  z-index: 2 !important;
-  grid-row-gap: 30px;
-  -moz-column-gap: 15vh;
-       column-gap: 15vh;
+  z-index: 1 !important;
+  grid-row-gap: 10px;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
 }
 
 #procreate-grid {
-  width: 75%;
+  padding: 10px;
+  width: 73%;
   min-height: 40vh;
   background: #F7F2E6;
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 250px);
-  grid-template-rows: repeat(6, 220px);
-  grid-row-gap: 30px;
-  -moz-column-gap: 15vh;
-       column-gap: 15vh;
+  grid-template-rows: repeat(6, 250px);
+  grid-row-gap: 10px;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
 }
 
 #multi-grid {
@@ -71,22 +77,22 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 250px);
   grid-template-rows: repeat(3, 220px);
-  grid-row-gap: 30px;
+  grid-row-gap: 20px;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
 
 #nineteen-grid {
-  width: 60%;
+  width: 63%;
   min-height: 40vh;
   background: #F7F2E6;
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 250px);
   grid-template-rows: repeat(6, 250px);
-  grid-row-gap: 8px;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  grid-row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 #fifteen-grid {
@@ -95,11 +101,11 @@ button {
   background: #F7F2E6;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 230px);
-  grid-template-rows: repeat(5, 230px);
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(5, 250px);
   grid-row-gap: 20px;
-  -moz-column-gap: 20vh;
-       column-gap: 20vh;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
 }
 
 .thumbnail {

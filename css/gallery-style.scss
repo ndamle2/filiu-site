@@ -37,11 +37,11 @@ button {
   background: $background;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, .3fr));
+  grid-template-columns: repeat(3, minmax(200px, .2fr));
   grid-template-rows: 250px 250px;
   // border: solid blue;
-  grid-row-gap: 30px;
-  column-gap: 30px;
+  grid-row-gap: 10px;
+  column-gap: 10px;
 }
 
 #surreal-grid {
@@ -51,7 +51,7 @@ button {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 250px);
-  grid-template-rows: repeat(3, 220px); 
+  grid-template-rows: repeat(3, 220px);
   justify-content: space-evenly;
   align-content: space-evenly;
   // border: solid blue;
@@ -122,7 +122,7 @@ button {
   img {
     // position: absolute;
     font-size: 0;
-    // opacity: .9;    
+    // opacity: .9;
     justify-content: center;
     overflow: hidden;
     padding: 0;

@@ -688,19 +688,19 @@ span.active{
 
 #surreal-text1 p{
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
+  font-size: 80px;
   font-weight: 300;
   color: #878787;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   overflow: hidden;
-  margin-left: 40%;
+  margin-left: 25%;
   padding-top: 30px;
 }
 
 #surreal-text1 b{
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
+  font-size:80px;
   font-weight: 500;
   color: #878787;
   writing-mode: vertical-rl;
@@ -715,15 +715,15 @@ span.active{
 }
 #surreal-text2 p{
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
+  font-size: 80px;
   font-weight: 500;
   color: #878787;
-  padding-left: 45%;
-  padding-top: 100px;
+  padding-left: 36%;
+  padding-top: 50px;
   letter-spacing: 10px;
   overflow: visible;
   margin-bottom: 80px;
-  z-index: 3 !important;
+  z-index: 2 !important;
   position: relative;
 }
 
@@ -749,7 +749,7 @@ span.active{
   /* max-width: 800px; */
   max-width: 100% !important;
   max-height: 100% !important;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .procreate-column {
   flex: 25%;
@@ -790,7 +790,7 @@ span.active{
 
 #multi-text {
   text-align: right;
-  padding-right: 10px;
+  padding-right: 50px;
 }
 
 #multi-text p{
