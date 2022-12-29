@@ -96,10 +96,10 @@ function thumbnailToOriginal(thumbnail) {
 }
 
 function showSlides(n) {
-  const overlayImage = document.querySelector('.overlay__inner img');
-  const overlayCaption = document.querySelector('.overlay__inner p');
+  const overlayImage = document.querySelector('.overlay__inner .expanded-img');
+  //const overlayCaption = document.querySelector('.overlay__inner p');
   overlayImage.src = thumbnailToOriginal(slides[slideIndex].src)
-  overlayCaption.innerHTML = slides[slideIndex].alt
+  //overlayCaption.innerHTML = slides[slideIndex].alt
 }
 
 function overlay() {
@@ -114,20 +114,20 @@ function overlay() {
   // let introSlides = document.querySelectorAll('#vis80 img')
 
   // let slides = [investigationSlides, oliSlides, surrealSlides, procreateSlides, multimediaSlides, nineteenSlides, fifteenSlides, vis41Slides, introSlides]
-  
+
   const buttons = document.querySelectorAll('.thumbnail');
   const overlay = document.querySelector('.overlay');
-  const overlayImage = document.querySelector('.overlay__inner img');
-  const overlayCaption = document.querySelector('.overlay__inner p');
+  const overlayImage = document.querySelector('.overlay__inner .expanded-img');
+  //const overlayCaption = document.querySelector('.overlay__inner p');
 
   function open(e) {
     overlay.classList.add('open');
     const src = e.currentTarget.querySelector('img').src;
     slideIndex = parseInt(e.currentTarget.querySelector('img').id - 1)
-    overlayCaption.innerHTML = e.currentTarget.querySelector('img').alt
+    //overlayCaption.innerHTML = e.currentTarget.querySelector('img').alt
     overlayImage.src = thumbnailToOriginal(src);
   }
-  
+
   function close() {
     overlayImage.src = ''
     overlay.classList.remove('open');

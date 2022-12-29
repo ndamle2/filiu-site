@@ -136,6 +136,10 @@ header{
   color: #BD295F;
 }
 
+#everyday-nav ul li .everyday-nav {
+  color: #ABCDA2;
+}
+
 footer {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -1178,4 +1182,13 @@ span.active{
 }
 .play-sections>div.shown {
   display:block;
+}
+
+.everyday-img {
+  text-align: center;
+}
+
+.everyday-img img {
+  padding-top: 150px;
+  max-width: 70%;
 }
