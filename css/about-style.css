@@ -108,22 +108,24 @@ header{
 }
 
 footer {
+  padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   line-height: 45px;
-  background-color: #F7F2E6;
+  background-color: #FFFDF9;
 }
 .footer-chat {
   font-size: 22px;
   font-weight: 500;
   color: #C77492;
+  font-family: "Poppins", sans-serif;
 }
 .footer-name {
   font-size: 17px;
   font-weight: 300;
   color: #D6D0C3;
+  font-family: "Poppins", sans-serif;
 }
-
 
 .about-text {
   padding: 100px;

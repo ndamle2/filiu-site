@@ -137,6 +137,7 @@ header{
   color: #BD295F;
 }
 footer {
+  padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   line-height: 45px;
@@ -146,12 +147,13 @@ footer {
   font-size: 22px;
   font-weight: 500;
   color: #C77492;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
 }
 .footer-name {
   font-size: 17px;
   font-weight: 300;
   color: #D6D0C3;
+  font-family: "Poppins", sans-serif;
 }
 
 
