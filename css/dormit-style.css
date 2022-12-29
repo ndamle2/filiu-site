@@ -168,11 +168,14 @@ footer {
   align-items: flex-end;
   vertical-align: bottom;
   height: 100%;
+
 }
 
 .title-column {
   text-align: center;
   padding: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .title-column h2 {
   font-family: "Poppins", sans-serif;
