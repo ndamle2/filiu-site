@@ -51,7 +51,7 @@ header{
 }
 
 .resume-nav:hover {
-  color: black;
+  color: #C77492;
 }
 
 .logo img{
@@ -105,7 +105,7 @@ header{
 }
 
 .navbar .resume-nav::after{
-  background: black;
+  background: #C77492;
 }
 
 .navbar a:hover::after{
@@ -503,7 +503,7 @@ footer {
 
 }
 .dormit-button {
-  background-color: #D9D1D9;
+  background-color: #D4CBF7;
   color: white;
   padding: 5px 3px;
   border: none;
@@ -539,12 +539,16 @@ footer {
 
 }
 .aisc-button {
-  background-color: #D9D1D9;
+  background-color: #F9ACD4;
   color: white;
   padding: 5px 3px;
   border: none;
   border-radius: 10px;
   max-width: 150px;
+}
+
+.aisc-button:hover {
+  background-color: #F470BA;
 }
 
 #clickable:hover {
@@ -578,12 +582,16 @@ footer {
 
 }
 .sacf-button {
-  background-color: #D9D1D9;
+  background-color: #B1CEFF;
   color: white;
   padding: 5px 3px;
   border: none;
   border-radius: 10px;
   max-width: 150px;
+}
+
+.sacf-button:hover {
+  background-color: #5996FF;
 }
 
 #highlight {

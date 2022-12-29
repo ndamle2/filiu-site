@@ -135,6 +135,7 @@ header{
 }
 footer {
   padding-bottom: 50px;
+  padding-top: 50px;
   text-align: center;
   line-height: 45px;
   background-color: #FFFDF9;
