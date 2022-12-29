@@ -139,7 +139,7 @@ header{
 }
 footer {
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
   line-height: 45px;
   background-color: #FFFDF9;
@@ -148,12 +148,13 @@ footer {
   font-size: 22px;
   font-weight: 500;
   color: #C77492;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
 }
 .footer-name {
   font-size: 17px;
   font-weight: 300;
   color: #D6D0C3;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -429,6 +430,9 @@ footer {
   text-align: center;
 }
 
+.last-image {
+  padding-bottom: 50px;
+}
 #access11 {
   width:25%;
 }

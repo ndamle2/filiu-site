@@ -142,6 +142,7 @@ footer {
   text-align: center;
   line-height: 45px;
   background-color: #FFFDF9;
+  padding-top: 50px;
 }
 .footer-chat {
   font-size: 22px;
@@ -153,6 +154,7 @@ footer {
   font-size: 17px;
   font-weight: 300;
   color: #D6D0C3;
+  font-family: "Poppins", sans-serif;
 }
 
 
