@@ -23,7 +23,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background: #F7F2E6;
-  padding: 2.5%;
+  padding: 1%;
   transition: .3s;
   box-shadow: 0px 0px 10px rgb(0 0 0 /10%);
   margin-bottom: 80px;
@@ -44,10 +44,15 @@ header{
   color: #BD295F;
 }
 
+.resume-nav:hover {
+  color: #C77492;
+}
+
 .logo img{
   max-width: 100%;
   width:40px;
   height: auto;
+  margin-left: 50px;
 }
 
 .navbar {
@@ -87,6 +92,13 @@ header{
   width: 100%;
 }
 
+.navbar .resume-nav::after{
+  background: #C77492;
+}
+
+.resume-nav:hover {
+  color: #C77492;
+}
 #menu-icon{
   font-size: 35px;
   color: var(--text-color);
@@ -114,7 +126,9 @@ footer {
 
 
 .about-text {
-  padding: 150px;
+  padding: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 

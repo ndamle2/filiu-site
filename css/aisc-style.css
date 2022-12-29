@@ -38,6 +38,9 @@ header{
   color: #BD295F;
 }
 
+.resume-nav:hover {
+  color: #C77492;
+}
 .logo img{
   max-width: 100%;
   width:40px;
@@ -89,11 +92,11 @@ header{
 }
 
 .navbar .resume-nav::after{
-  background: black;
+  background: #C77492;
 }
 
 .resume-nav:hover {
-  color: black;
+  color: #C77492;
 }
 .navbar a::after{
   content: '';

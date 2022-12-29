@@ -89,11 +89,11 @@ header{
 }
 
 .navbar .resume-nav::after{
-  background: black;
+  background: #C77492;
 }
 
 .resume-nav:hover {
-  color: black;
+  color: #C77492;
 }
 .navbar a::after{
   content: '';
