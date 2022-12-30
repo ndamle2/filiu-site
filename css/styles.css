@@ -147,6 +147,11 @@ footer {
   line-height: 30px;
   background-color: #FFFDF9;
 }
+#darker-footer {
+  padding-top: 100px;
+  background-color: #F7F2E6;
+}
+
 .footer-chat {
   font-size: 22px;
   font-weight: 500;
@@ -803,12 +808,8 @@ span.active{
   letter-spacing: 10px;
   overflow: visible;
   margin-bottom: 80px;
-<<<<<<< HEAD
   z-index: 2 !important;
-=======
->>>>>>> 097ab46a634048fa7539bbcbb3d21d64e6eb1bc0
   position: relative;
-  z-index: 3;
 }
 
 /* #procreate {

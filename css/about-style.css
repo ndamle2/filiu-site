@@ -82,11 +82,28 @@ header{
   position: absolute;
   width: 0;
   height: 2px;
-  background: #BA9369;
+  background: #EBA937;
   bottom: -3px;
   left: 0;
   transition: ease .40s;
 }
+
+.navbar .play-nav::after{
+  background: #BD295F;
+}
+
+.navbar .about-nav::after{
+  background: #8CA9E1;
+}
+
+.navbar .everyday-nav::after{
+  background: #ABCDA2;
+}
+
+.navbar .resume-nav::after{
+  background: #C77492;
+}
+
 
 .navbar a:hover::after{
   width: 100%;
@@ -112,7 +129,7 @@ footer {
   padding-bottom: 50px;
   text-align: center;
   line-height: 45px;
-  background-color: #FFFDF9;
+  background-color: #F7F2E6;
 }
 .footer-chat {
   font-size: 22px;
