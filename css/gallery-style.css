@@ -93,6 +93,7 @@ button {
   grid-row-gap: 20px;
   -moz-column-gap: 20px;
        column-gap: 20px;
+       padding-left: 100px;
 }
 
 #fifteen-grid {
@@ -106,6 +107,8 @@ button {
   grid-row-gap: 20px;
   -moz-column-gap: 5vh;
        column-gap: 5vh;
+
+
 }
 
 .thumbnail {
@@ -284,7 +287,7 @@ button {
 .procreate-top {
   height: 170px !important;
   width: 800px !important;
-  margin: 0px 20px 20px 20px;
+  margin: 0px 60px 20px 60px;
 }
 
 .print {
