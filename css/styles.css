@@ -17,6 +17,11 @@
   --p-font: 1rem;
 }
 
+.favicon {
+  width: 60%;
+  height: 100%;
+}
+
 body{
   background: var(--bg-color);
   color: var(--text-color);
@@ -350,10 +355,9 @@ footer {
   display: flex;
 }
 
-.wordrive-img {
+.square-img {
   flex: 50%;
   text-align: center;
-  margin-left: 44px;
 }
 .wordrive-text {
   flex: 50%;
@@ -362,15 +366,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 40px;
 
 }
-.uiexp1 {
-  width: 68%;
-  min-width: 250px;
+.uiexp {
+  width: 75%;
   height: auto;
   margin: auto;
-  padding-right: 20px;
 
 }
 .wordrive-button {
@@ -403,7 +404,7 @@ footer {
   justify-content: center;
 }
 .uiexp2 {
-  width: 90%;
+  width: 75%;
   min-width: 250px;
   height: auto;
   margin: auto;
