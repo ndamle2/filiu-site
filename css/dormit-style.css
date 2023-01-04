@@ -278,6 +278,8 @@ footer {
 
 .row img {
   padding: 20px;
+  width:50%;
+  height: auto;
 }
 
 .row-image {
