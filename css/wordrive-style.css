@@ -339,7 +339,7 @@ footer {
 }
 
 #comp-analysis {
-  width: 65%;
+  width: 95%;
 }
 
 .companalysis {
@@ -402,6 +402,7 @@ footer {
 .access p img {
   padding-left: 10px;
   padding-right: 3px;
+  padding-bottom: 10px;
   vertical-align:middle;
 }
 
