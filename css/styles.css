@@ -173,7 +173,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 1000000px) {
+@media screen and (max-width: 0px) {
 
   .phone {
     display: block;
