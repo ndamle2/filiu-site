@@ -431,12 +431,13 @@ footer {
 
 .table {
   padding-bottom: 50px;
-  max-width: 60%;
+  padding-top: 40px;
+  width: 90%;
 }
 
 .graph {
   padding-bottom: 50px;
-  max-width: 60%;
+  max-width: 90%;
 }
 
 #prototype1 {
@@ -464,6 +465,7 @@ footer {
 }
 
 .iteration-image {
+  width: 90%;
   max-width: 600px;
   padding-bottom: 40px;
   padding-left: 20px;
