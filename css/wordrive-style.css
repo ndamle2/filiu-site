@@ -410,6 +410,11 @@ footer {
   padding-left: 30px;
 }
 
+.access-sublist img{
+  height: 40px;
+  width: auto;
+}
+
 .flexed-list {
   display: flex;
   padding-bottom: 30px;

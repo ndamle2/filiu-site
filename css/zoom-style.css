@@ -395,6 +395,7 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
+  width: 45%;
 }
 
 .dm {
@@ -402,6 +403,9 @@ footer {
   padding-bottom: 40px;
 }
 
+.recap {
+  margin-bottom: 40px;
+}
 .breakoutChat {
   display: flex;
   justify-content: center;
@@ -447,9 +451,6 @@ footer {
   padding-bottom: 40px;
 }
 
-.signifier {
-
-}
 
 .signifier-image {
   max-width: 30%;
