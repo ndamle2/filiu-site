@@ -394,6 +394,19 @@ footer {
   background-color: #60C8FF;
 }
 
+.potluck-button {
+  background-color: #E7AB89;
+  color: white;
+  padding: 5px 3px;
+  border: none;
+  border-radius: 10px;
+  max-width: 150px;
+}
+
+.potluck-button:hover {
+  background-color: #DA6726;
+}
+
 #dxd {
   padding-top: 20px;
 }
@@ -550,7 +563,7 @@ footer {
     max-width: 100%;
     width:25px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .navbar {
@@ -560,10 +573,10 @@ footer {
     position: relative;
   }
   .navbar a{
-    font-size: 18px;
+    font-size: 14px;
     color: var(--text-color);
     font-weight: 500;
-    padding: 10px 10.8px;
+    padding: 10px 5px;
     margin-top: 10px;
     color: #FFFDF9;
     text-shadow:
