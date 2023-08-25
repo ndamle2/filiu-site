@@ -58,6 +58,13 @@ function playTab(elem) {
     document.getElementById('vis80').parentElement.classList.add('shown');
     document.getElementById('dsgn1').parentElement.classList.add('shown');
   }
+  if(document.getElementById("org") == elem) {
+    document.getElementById('cssa').parentElement.classList.add('shown');
+    document.getElementById('designco').parentElement.classList.add('shown');
+  }
+  if(document.getElementById("past") == elem) {
+    document.getElementById('promotions').parentElement.classList.add('shown');
+  }
 }
 
 

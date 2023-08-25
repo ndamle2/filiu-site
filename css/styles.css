@@ -8,7 +8,7 @@
 }
 
 :root{
-  --bg-color: #F6F2E6;
+  --bg-color: #FFFDF9;
   --text-color: #C77492;
   --second-color: #a09dab;
   --main-color: #f75023;
@@ -187,6 +187,9 @@ footer {
   text-align: right;
 }
 
+.home svg {
+  width: 100%;
+}
 .home-img {
   position: absolute;
 }
@@ -314,36 +317,27 @@ footer {
   display: block;
   padding-bottom: 40px;
 }
-#work {
-  fill: #D9AF6E;
+#work-piece:hover {
+  fill: #FFC34F;
 }
-#work:hover {
-  fill: #EBA937;
-}
-#play {
-  fill: #D1828A;
-}
-#play:hover {
-  fill: #BD295F;
+#play-piece:hover {
+  fill: #FF0082;
 }
 #about {
   fill: #B6BDCE;
 }
-#about:hover {
-  fill: #8CA9E1;
+#about-piece:hover {
+  fill: #6922FF;
 }
-#everyday {
-  fill: #BDC39C;
-}
-#everyday:hover {
-  fill: #AEBC67;
+#everyday-piece:hover {
+  fill: #B7F400;
 }
 
 .work-scroll {
   margin: auto;
   width: 50%;
-  padding-bottom: 75px;
-  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-top: 200px;
 }
 
 #work-scroll-text {
@@ -380,7 +374,7 @@ footer {
 .exp-section {
   background-color: #FFFDF9;
   transition: .5s background-color;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 50px;
   vertical-align: middle;
 }
@@ -473,6 +467,15 @@ footer {
 .zoom-button:hover {
   background-color: #60C8FF;
 }
+
+.epic-button {
+  background-color: #DE7494;
+  color: white;
+  padding: 5px 3px;
+  border: none;
+  border-radius: 10px;
+  max-width: 150px;
+} 
 
 .potluck-button {
   background-color: #E7AB89;
@@ -591,6 +594,17 @@ footer {
   background-color: #F470BA;
 }
 
+.aisc-img {
+  width: 64%;
+  height: auto;
+  padding-top: 10%;
+  margin-left: 14%;
+}
+
+.aisc-square {
+  flex: 50%;
+  text-align: left;
+}
 
 #clickable:hover {
   transform:scale(1.1,1.1);
@@ -772,12 +786,14 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
   }
   .vis-top {
     width:80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
   }
   .exp-section {
     background-color: #FFFDF9;
@@ -1540,6 +1556,66 @@ span.active{
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
 }
+
+#cssa p {
+  font-size: 40px;
+  color: #878787;
+  font-weight: 300;
+  padding-left: 5%;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#cssa-row {
+  padding-left: 5%;
+  display: flex;
+}
+
+#cssa-row img{
+  max-width: 35%;
+  padding: 20px;
+}
+
+#conference {
+  display: flex;
+}
+
+#cssa-col1 {
+  padding-left: 5%;
+}
+
+#cssa-col1 img {
+  max-width: 70%;
+  padding: 20px;
+}
+
+#cssa-col2 {
+  padding-left: 0%;
+}
+
+#cssa-col2 img {
+  max-width: 80%;
+  padding: 20px;
+}
+
+#cssa-text {
+  margin-right: 15%;
+  text-align: right;
+}
+
+#cssa-text h1{
+  font-size: 100px;
+  font-weight: 500;
+  color: #878787;
+}
+
+#cssa-text h3{
+  font-size: 30px;
+  font-weight: 300;
+  color: #878787;
+}
+
 .play-sections>div  {
   display:none;
 }
@@ -1554,4 +1630,106 @@ span.active{
 .everyday-img img {
   padding-top: 150px;
   max-width: 70%;
+}
+
+#designco {
+  display: flex;
+  width: 100%;
+}
+
+#dco-text {
+  margin-left: 10%;
+}
+
+#designco img {
+  max-width: 40%;
+  margin-bottom: 50px;
+}
+
+#dco-images {
+  width: 70%;
+}
+
+.design-co-subheading {
+  width: 16%;
+  max-height: 500px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #878787;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align:center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.design-co-text {
+  width: 15%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  font-weight: 300;
+  color: #878787;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align:center;
+}
+
+#row1 {
+  margin-left: 40px;
+}
+
+#row2 img {
+  margin-right: 70px;
+}
+
+#row3 {
+  text-align: right;
+}
+
+#row4 {
+  text-align: center;
+}
+
+.promo-row {
+  display: flex;
+  width: 100%;
+  padding-left: 5%;
+}
+
+.promo-row img {
+  max-width: 30%;
+  height: auto;
+  padding: 2%;
+}
+
+#promotions {
+  display: flex;
+  width: 100%;
+}
+
+.flyer-subheading {
+  width: 16%;
+  max-height: 500px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  color: #878787;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  text-align:center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.flyer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #878787;
+  text-align:right;
+}
+
+#flyer-text {
+  padding-right: 5%;
 }
