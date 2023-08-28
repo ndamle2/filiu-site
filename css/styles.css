@@ -477,6 +477,10 @@ footer {
   max-width: 150px;
 } 
 
+.epic-button:hover {
+  background-color: #BA0239;
+}
+
 .potluck-button {
   background-color: #E7AB89;
   color: white;

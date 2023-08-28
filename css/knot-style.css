@@ -629,7 +629,7 @@ footer {
 
 /* ----- carousel control buttons stylings ----- */
 .slide-btn {
-    background-color: #red;
+    background-color: red;
     border-radius: 50%;
     border: .2rem solid #d38800;
     width: 1.2rem;
