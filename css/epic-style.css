@@ -358,6 +358,7 @@ footer {
   text-align: left;
   padding-bottom: 20px;
 }
+
 #violations {
   width: 50%;
   height: auto;
@@ -446,4 +447,30 @@ footer {
   font-weight: 400;
   text-align: left;
   padding-bottom: 20px;
+}
+
+#type {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  color: #979797;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.demos {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+#mobile {
+  width: 50%;
+}
+
+#desktop {
+  width: 100%;
+  padding-top: 10%;
+}
+video {
+  padding: 20px
 }
